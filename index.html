@@ -3,277 +3,709 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoProtecta - Proteção Veicular Completa e Confiável</title>
-    <meta name="description" content="Proteja seu veículo sem sair de casa. Tranquilidade em cada quilômetro com a AutoProtecta.">
-    
-    <!-- Fontes -->
+    <title>AutoProtecta - Proteção Veicular Completa e Online</title>
+    <meta name="description" content="Proteção veicular completa, sem burocracia e 100% online. Faça sua cotação em menos de 2 minutos e dirija com tranquilidade.">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/home.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header com Logo -->
     <header class="header">
         <div class="container">
-            <div class="brand">
+            <div class="header-content">
                 <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
                     <span class="logo-text">AutoProtecta</span>
-                    <div class="logo-symbol"><i class="fas fa-shield-alt"></i></div>
                 </div>
+                <nav class="nav-menu">
+                    <a href="#sobre" class="nav-link">Sobre</a>
+                    <a href="#beneficios" class="nav-link">Benefícios</a>
+                    <a href="#como-funciona" class="nav-link">Como Funciona</a>
+                    <a href="#depoimentos" class="nav-link">Depoimentos</a>
+                </nav>
             </div>
-            
-            <nav class="nav">
-                <ul class="nav-menu">
-                    <li><a href="#protecao" class="nav-link">Proteção</a></li>
-                    <li><a href="#veiculos" class="nav-link">Veículos</a></li>
-                    <li><a href="#suporte" class="nav-link">Suporte</a></li>
-                    <li><a href="#conta" class="nav-link">Minha Conta</a></li>
-                </ul>
-            </nav>
-            
-            <div class="header-actions">
-                <a href="#contato" class="btn btn-secondary">Contato</a>
-                <a href="#cotacao" class="btn btn-primary">Fazer Cotação</a>
-            </div>
-            
-            <button class="mobile-menu-toggle" aria-label="Menu mobile">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Seção 1: Herói -->
     <section class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-title">
-                        Proteja seu veículo com 
-                        <span class="highlight">segurança total</span>
-                    </h1>
-                    <p class="hero-subtitle">
-                        Tranquilidade em cada quilômetro. A AutoProtecta oferece proteção veicular completa, 
-                        rápida e confiável, sem que você precise sair de casa.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#cotacao" class="btn btn-primary btn-large">
-                            Começar Agora
-                        </a>
-                        <a href="#saiba-mais" class="btn btn-outline btn-large">
-                            Saiba Mais
-                        </a>
-                    </div>
+                    <h1 class="hero-title">Proteção veicular completa, sem burocracia e 100% online.</h1>
+                    <p class="hero-subtitle">Faça sua cotação em menos de 2 minutos e dirija com tranquilidade.</p>
                 </div>
-                <div class="hero-visual">
-                    <div class="hero-image">
-                        <div class="rhino-symbol"><i class="fas fa-shield-alt"></i></div>
-                        <div class="protection-shield"></div>
+                <div class="hero-form">
+                    <div class="form-container">
+                        <h3 class="form-title">Solicite sua cotação gratuita</h3>
+                        
+                        <!-- Passo 1: Dados de Contato -->
+                        <div class="form-step active" id="step1">
+                            <div class="progress-container">
+
+                                <div class="progress-text">Passo 1 de 3</div>
+                            </div>
+                            <div class="step-indicator">
+                                <span class="step-number active">1</span>
+                                <span class="step-number">2</span>
+                                <span class="step-number">3</span>
+                            </div>
+                            <h4>Dados de Contato</h4>
+                            <p class="step-description">Preencha seus dados para começarmos sua cotação personalizada</p>
+                            <div class="form-group">
+                                <div class="input-icon">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="nome" placeholder="Nome completo" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" id="email" placeholder="E-mail" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <input type="tel" id="whatsapp" placeholder="WhatsApp" required>
+                                </div>
+                            </div>
+                            <button type="button" class="btn-next" onclick="nextStep()">
+                                <span>Próximo passo</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+
+                        <!-- Passo 2: Dados do Veículo -->
+                        <div class="form-step" id="step2">
+                            <div class="progress-container">
+                               
+                                <div class="progress-text">Passo 2 de 3</div>
+                            </div>
+                            <div class="step-indicator">
+                                <span class="step-number completed">1</span>
+                                <span class="step-number active">2</span>
+                                <span class="step-number">3</span>
+                            </div>
+                            <h4>Dados do Veículo</h4>
+                            <p class="step-description">Informações sobre seu veículo para calcular a melhor proteção</p>
+                            <div class="form-group">
+                                <div class="input-icon">
+                                    <i class="fas fa-car"></i>
+                                    <select id="tipo-veiculo" required>
+                                        <option value="">Tipo de veículo</option>
+                                        <option value="carro">Carro</option>
+                                        <option value="moto">Moto</option>
+                                        <option value="caminhao">Caminhão</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-icon">
+                                    <i class="fas fa-tag"></i>
+                                    <select id="marca" required>
+                                        <option value="">Marca</option>
+                                        <option value="chevrolet">Chevrolet</option>
+                                        <option value="ford">Ford</option>
+                                        <option value="volkswagen">Volkswagen</option>
+                                        <option value="fiat">Fiat</option>
+                                        <option value="honda">Honda</option>
+                                        <option value="toyota">Toyota</option>
+                                        <option value="outros">Outros</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-icon">
+                                    <i class="fas fa-calendar"></i>
+                                    <select id="ano" required>
+                                        <option value="">Ano</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2007">2007</option>
+                                        <option value="2006">2006</option>
+                                        <option value="2005">2005</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2000">2000</option>
+                                        <option value="1999">1999</option>
+                                        <option value="1998">1998</option>
+                                        <option value="1997">1997</option>
+                                        <option value="1996">1996</option>
+                                        <option value="1995">1995</option>
+                                        <option value="1994">1994</option>
+                                        <option value="1993">1993</option>
+                                        <option value="1992">1992</option>
+                                        <option value="1991">1991</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1989">1989</option>
+                                        <option value="1988">1988</option>
+                                        <option value="1987">1987</option>
+                                        <option value="1986">1986</option>
+                                        <option value="1985">1985</option>
+                                        <option value="1984">1984</option>
+                                        <option value="1983">1983</option>
+                                        <option value="1982">1982</option>
+                                        <option value="1981">1981</option>
+                                        <option value="1980">1980</option>
+                                        <option value="1979">1979</option>
+                                        <option value="1978">1978</option>
+                                        <option value="1977">1977</option>
+                                        <option value="1976">1976</option>
+                                        <option value="1975">1975</option>
+                                        <option value="1974">1974</option>
+                                        <option value="1973">1973</option>
+                                        <option value="1972">1972</option>
+                                        <option value="1971">1971</option>
+                                        <option value="1970">1970</option>
+                                        <option value="1969">1969</option>
+                                        <option value="1968">1968</option>
+                                        <option value="1967">1967</option>
+                                        <option value="1966">1966</option>
+                                        <option value="1965">1965</option>
+                                        <option value="1964">1964</option>
+                                        <option value="1963">1963</option>
+                                        <option value="1962">1962</option>
+                                        <option value="1961">1961</option>
+                                        <option value="1960">1960</option>
+                                        <option value="1959">1959</option>
+                                        <option value="1958">1958</option>
+                                        <option value="1957">1957</option>
+                                        <option value="1956">1956</option>
+                                        <option value="1955">1955</option>
+                                        <option value="1954">1954</option>
+                                        <option value="1953">1953</option>
+                                        <option value="1952">1952</option>
+                                        <option value="1951">1951</option>
+                                        <option value="1950">1950</option>
+                                        <option value="1949">1949</option>
+                                        <option value="1948">1948</option>
+                                        <option value="1947">1947</option>
+                                        <option value="1946">1946</option>
+                                        <option value="1945">1945</option>
+                                        <option value="1944">1944</option>
+                                        <option value="1943">1943</option>
+                                        <option value="1942">1942</option>
+                                        <option value="1941">1941</option>
+                                        <option value="1940">1940</option>
+                                        <option value="1939">1939</option>
+                                        <option value="1938">1938</option>
+                                        <option value="1937">1937</option>
+                                        <option value="1936">1936</option>
+                                        <option value="1935">1935</option>
+                                        <option value="1934">1934</option>
+                                        <option value="1933">1933</option>
+                                        <option value="1932">1932</option>
+                                        <option value="1931">1931</option>
+                                        <option value="1930">1930</option>
+                                        <option value="1929">1929</option>
+                                        <option value="1928">1928</option>
+                                        <option value="1927">1927</option>
+                                        <option value="1926">1926</option>
+                                        <option value="1925">1925</option>
+                                        <option value="1924">1924</option>
+                                        <option value="1923">1923</option>
+                                        <option value="1922">1922</option>
+                                        <option value="1921">1921</option>
+                                        <option value="1920">1920</option>
+                                        <option value="1919">1919</option>
+                                        <option value="1918">1918</option>
+                                        <option value="1917">1917</option>
+                                        <option value="1916">1916</option>
+                                        <option value="1915">1915</option>
+                                        <option value="1914">1914</option>
+                                        <option value="1913">1913</option>
+                                        <option value="1912">1912</option>
+                                        <option value="1911">1911</option>
+                                        <option value="1910">1910</option>
+                                        <option value="1909">1909</option>
+                                        <option value="1908">1908</option>
+                                        <option value="1907">1907</option>
+                                        <option value="1906">1906</option>
+                                        <option value="1905">1905</option>
+                                        <option value="1904">1904</option>
+                                        <option value="1903">1903</option>
+                                        <option value="1902">1902</option>
+                                        <option value="1901">1901</option>
+                                        <option value="1900">1900</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-icon">
+                                    <i class="fas fa-cog"></i>
+                                    <input type="text" id="modelo" placeholder="Modelo" required>
+                                </div>
+                            </div>
+                            <div class="form-buttons">
+                                <button type="button" class="btn-prev" onclick="prevStep()">
+                                    <i class="fas fa-arrow-left"></i>
+                                    <span>Voltar</span>
+                                </button>
+                                <button type="button" class="btn-next" onclick="nextStep()">
+                                    <span>Próximo passo</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Passo 3: Dados de Localização e Uso -->
+                        <div class="form-step" id="step3">
+                            <div class="progress-container">
+                               
+                                <div class="progress-text">Passo 3 de 3</div>
+                            </div>
+                            <div class="step-indicator">
+                                <span class="step-number completed">1</span>
+                                <span class="step-number completed">2</span>
+                                <span class="step-number active">3</span>
+                            </div>
+                            <h4>Localização e Uso</h4>
+                            <p class="step-description">Últimas informações para finalizar sua cotação</p>
+                            <div class="form-group">
+                                <div class="input-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <select id="estado" required>
+                                        <option value="">Estado</option>
+                                        <option value="AC">Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-icon">
+                                    <i class="fas fa-city"></i>
+                                    <input type="text" id="cidade" placeholder="Cidade" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <select id="uso-app" required>
+                                        <option value="">Uso para aplicativo</option>
+                                        <option value="pessoal">Uso pessoal</option>
+                                        <option value="trabalho">Uso para trabalho</option>
+                                        <option value="uber">Uber</option>
+                                        <option value="99">99</option>
+                                        <option value="cabify">Cabify</option>
+                                        <option value="indrive">inDrive</option>
+                                        <option value="outros">Outros</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-buttons">
+                                <button type="button" class="btn-prev" onclick="prevStep()">
+                                    <i class="fas fa-arrow-left"></i>
+                                    <span>Voltar</span>
+                                </button>
+                                <button type="submit" class="btn-submit">
+                                    <i class="fas fa-paper-plane"></i>
+                                    <span>Receber Cotação</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features" id="saiba-mais">
+    <!-- Seção Sobre a Empresa -->
+    <section id="sobre" class="about">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Por que escolher a AutoProtecta?</h2>
-                <p class="section-subtitle">
-                    Nossa missão é ser o guardião incansável do seu patrimônio, 
-                    oferecendo proteção com inovação e transparência.
-                </p>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre a AutoProtecta</h2>
+                    <p class="about-description">
+                        A AutoProtecta nasceu da necessidade de simplificar a proteção veicular no Brasil. 
+                        Somos uma empresa 100% digital, especializada em oferecer soluções de proteção 
+                        veicular de forma simples, rápida e transparente.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>+50.000</h4>
+                                <p>Clientes protegidos</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <h4>4.9/5</h4>
+                                <p>Avaliação dos clientes</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>24/7</h4>
+                                <p>Suporte disponível</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="about-mission">
+                        Nossa missão é democratizar o acesso à proteção veicular de qualidade, 
+                        eliminando a burocracia tradicional e oferecendo planos personalizados que 
+                        realmente protegem o que é mais importante para você.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-shield-alt"></i>
+                        <p>AutoProtecta</p>
+                    </div>
+                </div>
             </div>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon sentinela">
+        </div>
+    </section>
+
+    <!-- Seção 2: Benefícios e Diferenciais -->
+    <section id="beneficios" class="benefits">
+        <div class="container">
+            <h2 class="section-title">Por que escolher a AutoProtecta?</h2>
+            <p class="section-subtitle">Descubra os diferenciais que fazem da AutoProtecta a escolha certa para proteger seu veículo</p>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3 class="feature-title">O Sentinela</h3>
-                    <p class="feature-description">
-                        Defesa e vigilância constante. Somos o guardião incansável 
-                        do que é valioso para você.
-                    </p>
+                    <div class="benefit-content">
+                        <h3>Proteção Completa</h3>
+                        <p class="benefit-description">Roubo, furto, colisão e muito mais. Sua proteção começa onde as outras terminam.</p>
+                        <ul class="benefit-features">
+                            <li><i class="fas fa-check"></i> Cobertura contra roubo e furto</li>
+                            <li><i class="fas fa-check"></i> Proteção em colisões</li>
+                            <li><i class="fas fa-check"></i> Danos naturais</li>
+                            <li><i class="fas fa-check"></i> Assistência 24h</li>
+                        </ul>
+                        <div class="benefit-highlight">
+                            <span class="highlight-text">Cobertura Total</span>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon altruista">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Assistência 24h</h3>
+                        <p class="benefit-description">Suporte completo a qualquer hora, em qualquer lugar. Estamos sempre aqui para você.</p>
+                        <ul class="benefit-features">
+                            <li><i class="fas fa-check"></i> Atendimento 24 horas</li>
+                            <li><i class="fas fa-check"></i> Suporte via WhatsApp</li>
+                            <li><i class="fas fa-check"></i> Equipe especializada</li>
+                            <li><i class="fas fa-check"></i> Resposta em até 5 min</li>
+                        </ul>
+                        <div class="benefit-highlight">
+                            <span class="highlight-text">Sempre Disponível</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>100% Online</h3>
+                        <p class="benefit-description">Sem burocracia, sem papelada. Tudo resolvido pela internet, de forma rápida e segura.</p>
+                        <ul class="benefit-features">
+                            <li><i class="fas fa-check"></i> Cotação em 2 minutos</li>
+                            <li><i class="fas fa-check"></i> Vistoria por fotos</li>
+                            <li><i class="fas fa-check"></i> Apólice digital</li>
+                            <li><i class="fas fa-check"></i> Sem sair de casa</li>
+                        </ul>
+                        <div class="benefit-highlight">
+                            <span class="highlight-text">Zero Burocracia</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Preços Justos</h3>
+                        <p class="benefit-description">Proteção de qualidade sem pagar caro. Planos flexíveis que cabem no seu bolso.</p>
+                        <ul class="benefit-features">
+                            <li><i class="fas fa-check"></i> Planos a partir de R$ 29/mês</li>
+                            <li><i class="fas fa-check"></i> Sem taxas ocultas</li>
+                            <li><i class="fas fa-check"></i> Descontos por pagamento anual</li>
+                            <li><i class="fas fa-check"></i> Parcelamento em até 12x</li>
+                        </ul>
+                        <div class="benefit-highlight">
+                            <span class="highlight-text">A partir de R$ 29/mês</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 3: Como Funciona -->
+    <section id="como-funciona" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Como funciona</h2>
+            <p class="section-subtitle">Em apenas 4 passos simples, você estará protegido e dirigindo com tranquilidade</p>
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-icon-circle">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Faça a cotação</h3>
+                        <p class="step-description">Preencha o formulário em menos de 2 minutos com os dados do seu veículo</p>
+                        <ul class="step-details">
+                            <li><i class="fas fa-clock"></i> Tempo: 2 minutos</li>
+                            <li><i class="fas fa-mobile-alt"></i> Dispositivo: Qualquer um</li>
+                            <li><i class="fas fa-shield-alt"></i> Segurança: 100%</li>
+                        </ul>
+                        <div class="step-time">
+                            <span class="time-badge">2 min</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon-circle">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Personalize seu plano</h3>
+                        <p class="step-description">Escolha as coberturas que fazem sentido para o seu perfil e orçamento</p>
+                        <ul class="step-details">
+                            <li><i class="fas fa-list-check"></i> Coberturas personalizadas</li>
+                            <li><i class="fas fa-calculator"></i> Preços transparentes</li>
+                            <li><i class="fas fa-handshake"></i> Sem surpresas</li>
+                        </ul>
+                        <div class="step-time">
+                            <span class="time-badge">5 min</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon-circle">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Faça a vistoria online</h3>
+                        <p class="step-description">Envie fotos do seu veículo através do nosso aplicativo</p>
+                        <ul class="step-details">
+                            <li><i class="fas fa-camera"></i> Fotos simples</li>
+                            <li><i class="fas fa-mobile-alt"></i> App intuitivo</li>
+                            <li><i class="fas fa-check-circle"></i> Aprovação rápida</li>
+                        </ul>
+                        <div class="step-time">
+                            <span class="time-badge">3 min</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon-circle">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Esteja protegido</h3>
+                        <p class="step-description">Receba sua apólice e dirija com tranquilidade</p>
+                        <ul class="step-details">
+                            <li><i class="fas fa-file-contract"></i> Apólice digital</li>
+                            <li><i class="fas fa-shield-alt"></i> Proteção ativa</li>
+                            <li><i class="fas fa-headset"></i> Suporte 24h</li>
+                        </ul>
+                        <div class="step-time">
+                            <span class="time-badge">Imediato</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="total-time-info">
+                <div class="time-highlight">
+                    <i class="fas fa-stopwatch"></i>
+                    <span>Tempo total: <strong>10 minutos</strong></span>
+                </div>
+                <p>Do cadastro à proteção em menos tempo que uma pausa para o café!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 4: Prova Social -->
+    <section id="depoimentos" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O que nossos clientes dizem</h2>
+            <p class="section-subtitle">Mais de 50.000 clientes já confiaram na AutoProtecta. Veja o que eles têm a dizer</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"Processo super simples e rápido. Em menos de 1 hora estava protegido! A equipe foi muito atenciosa e explicou tudo claramente."</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">M</div>
+                            <div class="author-info">
+                                <h4>Marcos Silva</h4>
+                                <span class="author-location">São Paulo, SP</span>
+                                <span class="author-vehicle">Honda Civic 2022</span>
+                                <span class="author-plan">Plano Premium</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-highlight">
+                            <i class="fas fa-clock"></i>
+                            <span>Protegido em 45 minutos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"Excelente atendimento e preços muito competitivos. Recomendo! A assistência 24h já me salvou em uma emergência na estrada."</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">A</div>
+                            <div class="author-info">
+                                <h4>Ana Costa</h4>
+                                <span class="author-location">Rio de Janeiro, RJ</span>
+                                <span class="author-vehicle">Ford Ka 2021</span>
+                                <span class="author-plan">Plano Básico</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-highlight">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>Economia de R$ 180/ano</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"A assistência 24h salvou minha viagem. Profissionais muito competentes e o processo online é incrivelmente simples."</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">C</div>
+                            <div class="author-info">
+                                <h4>Carlos Santos</h4>
+                                <span class="author-location">Belo Horizonte, MG</span>
+                                <span class="author-vehicle">Toyota Corolla 2023</span>
+                                <span class="author-plan">Plano Completo</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-highlight">
+                            <i class="fas fa-headset"></i>
+                            <span>Suporte em 3 minutos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-stats">
+                <div class="stat-item">
+                    <div class="stat-number">4.9</div>
+                    <div class="stat-label">Avaliação média</div>
+                    <div class="stat-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50.000+</div>
+                    <div class="stat-label">Clientes protegidos</div>
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Satisfação</div>
+                    <div class="stat-icon">
                         <i class="fas fa-heart"></i>
                     </div>
-                    <h3 class="feature-title">O Altruísta</h3>
-                    <p class="feature-description">
-                        Cuidado e afeto em cada interação. Defendemos suas causas 
-                        com compaixão e generosidade.
-                    </p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon valente">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h3 class="feature-title">O Valente</h3>
-                    <p class="feature-description">
-                        Coragem e determinação para superar desafios e construir 
-                        um futuro de glórias para você.
-                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services" id="protecao">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Nossos Serviços de Proteção</h2>
-                <p class="section-subtitle">
-                    Soluções completas e personalizadas para proteger seu veículo 
-                    com a máxima eficiência e transparência.
-                </p>
-            </div>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-car"></i>
-                    </div>
-                    <h3>Proteção Veicular Completa</h3>
-                    <p>
-                        Cobertura abrangente para todos os tipos de veículos, 
-                        incluindo carros, motos, caminhões e utilitários.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Cobertura contra roubo e furto</li>
-                        <li><i class="fas fa-check"></i> Proteção contra danos acidentais</li>
-                        <li><i class="fas fa-check"></i> Assistência 24h em todo Brasil</li>
-                        <li><i class="fas fa-check"></i> Indenização rápida e justa</li>
-                    </ul>
-                    <a href="#cotacao" class="btn btn-outline">Ver Planos</a>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Processo 100% Digital</h3>
-                    <p>
-                        Contrate sua proteção veicular sem sair de casa, 
-                        com processo simples, rápido e seguro.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Cotação online em minutos</li>
-                        <li><i class="fas fa-check"></i> Documentação digital</li>
-                        <li><i class="fas fa-check"></i> Pagamento facilitado</li>
-                        <li><i class="fas fa-check"></i> Certificado instantâneo</li>
-                    </ul>
-                    <a href="#cotacao" class="btn btn-outline">Começar Agora</a>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
-                    <h3>Atendimento Personalizado</h3>
-                    <p>
-                        Suporte especializado e humanizado para resolver 
-                        suas dúvidas e necessidades com agilidade.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Especialistas dedicados</li>
-                        <li><i class="check">✓</i> Resposta em até 2 horas</li>
-                        <li><i class="fas fa-check"></i> Acompanhamento completo</li>
-                        <li><i class="fas fa-check"></i> Suporte em português</li>
-                    </ul>
-                    <a href="#suporte" class="btn btn-outline">Falar Conosco</a>
-                    </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta" id="cotacao">
+    <!-- Seção 5: CTA Final -->
+    <section class="final-cta">
         <div class="container">
             <div class="cta-content">
-                <h2>Proteja seu veículo hoje mesmo</h2>
-                <p>
-                    Junte-se a milhares de clientes que já escolheram a AutoProtecta 
-                    para proteger seu patrimônio com segurança e tranquilidade.
-                </p>
-                <div class="cta-actions">
-                    <a href="#formulario" class="btn btn-primary btn-large">
-                        Fazer Cotação Gratuita
-                    </a>
-                </div>
-                
-                <div class="contact-info">
-                    <span><i class="fas fa-phone"></i> 0800 123 4567</span>
-                    <span><i class="fas fa-envelope"></i> contato@autoprotecta.com.br</span>
-                    <span><i class="fas fa-clock"></i> Atendimento 24h</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form Section -->
-    <section class="contact-form" id="formulario">
-        <div class="container">
-            <div class="form-container">
-                <div class="form-header">
-                    <h2>Solicite sua cotação gratuita</h2>
-                    <p>Preencha os dados abaixo e receba uma proposta personalizada em minutos</p>
-                </div>
-                
-                <form class="quote-form" id="quoteForm">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Nome completo</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="phone">Telefone</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="vehicle">Tipo de veículo</label>
-                            <select id="vehicle" name="vehicle" required>
-                                <option value="">Selecione...</option>
-                                <option value="carro">Carro</option>
-                                <option value="moto">Moto</option>
-                                <option value="caminhao">Caminhão</option>
-                                <option value="utilitario">Utilitário</option>
-                            </select>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Mensagem (opcional)</label>
-                        <textarea id="message" name="message" rows="4"></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary btn-large">
-                        Solicitar Cotação
-                    </button>
-                </form>
+                <h2>Não espere o inesperado acontecer. Proteja seu veículo agora.</h2>
+                <p>Milhares de motoristas já confiam na AutoProtecta. Faça parte dessa família.</p>
+                <button class="btn-cta" onclick="scrollToForm()">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Fazer Cotação Grátis</span>
+                </button>
             </div>
         </div>
     </section>
@@ -282,60 +714,35 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-shield-alt"></i>
                         <span class="logo-text">AutoProtecta</span>
-                        <div class="logo-symbol"><i class="fas fa-shield-alt"></i></div>
                     </div>
-                    <p>
-                        Proteção veicular com inovação e transparência. 
-                        Seu patrimônio merece o melhor cuidado.
-                    </p>
+                    <p>Proteção veicular completa, sem burocracia e 100% online.</p>
                 </div>
-                
-                <div class="footer-links">
-                    <div class="link-group">
-                        <h4>Produtos</h4>
-                        <ul>
-                            <li><a href="#protecao">Proteção Veicular</a></li>
-                            <li><a href="#veiculos">Tipos de Veículos</a></li>
-                            <li><a href="#planos">Planos e Coberturas</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="link-group">
-                        <h4>Suporte</h4>
-                        <ul>
-                            <li><a href="#suporte">Central de Ajuda</a></li>
-                            <li><a href="#contato">Fale Conosco</a></li>
-                            <li><a href="#faq">Perguntas Frequentes</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="link-group">
-                        <h4>Empresa</h4>
-                        <ul>
-                            <li><a href="#sobre">Sobre Nós</a></li>
-                            <li><a href="#politica">Política de Privacidade</a></li>
-                            <li><a href="#termos">Termos de Uso</a></li>
-                        </ul>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@autoprotecta.com.br</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
-            
             <div class="footer-bottom">
                 <p>&copy; 2024 AutoProtecta. Todos os direitos reservados.</p>
-                <div class="social-links">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                </div>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="assets/js/main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
