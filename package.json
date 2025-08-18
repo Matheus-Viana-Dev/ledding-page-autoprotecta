@@ -1,46 +1,70 @@
 {
-  "name": "autoprotecta-landing-page",
+  "name": "autoprotecta-landing",
   "version": "1.0.0",
-  "description": "Landing page profissional para a Autoprotecta - Sistema de proteção veicular",
-  "main": "index.html",
-  "scripts": {
-    "start": "live-server --port=3000 --open=/index.html",
-    "build": "echo 'Build completed - static site ready'",
-    "lint:css": "stylelint assets/css/*.css",
-    "lint:js": "eslint assets/js/*.js",
-    "format": "prettier --write .",
-    "test": "echo 'No tests specified'"
-  },
+  "description": "Landing page de alta conversão para a AutoProtecta - Proteção veicular completa e confiável",
   "keywords": [
     "autoprotecta",
-    "proteção-veicular",
     "landing-page",
-    "html5",
-    "css3",
-    "javascript",
-    "responsive",
-    "design-system"
+    "protecao-veicular",
+    "seguro-auto",
+    "cotacao-online",
+    "nextjs",
+    "react",
+    "typescript",
+    "tailwindcss"
   ],
-  "author": "Autoprotecta Team",
+  "author": "AutoProtecta Team",
   "license": "UNLICENSED",
   "private": true,
-  "devDependencies": {
-    "live-server": "^1.2.2",
-    "prettier": "^3.0.0",
-    "stylelint": "^15.0.0",
-    "eslint": "^8.0.0"
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write .",
+    "analyze": "ANALYZE=true npm run build"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ],
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "15.4.6",
+    "framer-motion": "^11.0.0",
+    "react-hook-form": "^7.50.0",
+    "@hookform/resolvers": "^3.9.0",
+    "zod": "^3.23.0",
+    "react-input-mask": "^2.0.4",
+    "lucide-react": "^0.468.0",
+    "swiper": "^11.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-input-mask": "^1.0.2",
+    "@eslint/eslintrc": "^3.0.0",
+    "eslint": "^8",
+    "eslint-config-next": "15.4.6",
+    "@tailwindcss/postcss": "^0.0.0",
+    "tailwindcss": "^3.4.0",
+    "prettier": "^3.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/autoprotecta/landing-page.git"
+    "url": "https://github.com/autoprotecta/landing-page.git"
   },
   "bugs": {
     "url": "https://github.com/autoprotecta/landing-page/issues"
   },
-  "homepage": "https://autoprotecta.com.br"
+  "homepage": "https://autoprotecta.com.br",
+  "browserslist": [
+    ">0.3%",
+    "not dead",
+    "not op_mini all"
+  ]
 }

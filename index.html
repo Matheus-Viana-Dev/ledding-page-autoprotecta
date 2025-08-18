@@ -3,246 +3,339 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autoprotecta - Sistema de Design</title>
+    <title>AutoProtecta - Proteção Veicular Completa e Confiável</title>
+    <meta name="description" content="Proteja seu veículo sem sair de casa. Tranquilidade em cada quilômetro com a AutoProtecta.">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Satoshi:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
-    <!-- Material Design Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/home.css">
     
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <div class="brand-logo">
-                <img src="assets/images/logo-autoprotecta.png" alt="Autoprotecta" class="logo-image">
+            <div class="brand">
+                <div class="logo">
+                    <span class="logo-text">AutoProtecta</span>
+                    <div class="logo-symbol"><i class="fas fa-shield-alt"></i></div>
+                </div>
             </div>
             
-            <nav class="nav-menu">
-                <ul>
-                                    <li><a href="pages/protecao-page.html"><i class="fas fa-shield-alt"></i> Proteção</a></li>
-                <li><a href="pages/veiculos-page.html"><i class="fas fa-car"></i> Veículos</a></li>
-                <li><a href="pages/suporte-page.html"><i class="fas fa-headset"></i> Suporte</a></li>
-                <li><a href="pages/conta-page.html"><i class="fas fa-user"></i> Conta</a></li>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="#protecao" class="nav-link">Proteção</a></li>
+                    <li><a href="#veiculos" class="nav-link">Veículos</a></li>
+                    <li><a href="#suporte" class="nav-link">Suporte</a></li>
+                    <li><a href="#conta" class="nav-link">Minha Conta</a></li>
                 </ul>
             </nav>
             
-            <a href="pages/contato-page.html" class="btn-primary">
-                <i class="fas fa-phone"></i>
-                Contato
-            </a>
+            <div class="header-actions">
+                <a href="#contato" class="btn btn-secondary">Contato</a>
+                <a href="#cotacao" class="btn btn-primary">Fazer Cotação</a>
+            </div>
+            
+            <button class="mobile-menu-toggle" aria-label="Menu mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="diagonal-mask"></div>
-                    <h1 class="hero-title">Proteção Veicular que Inspira <span class="highlight">Confiança</span></h1>
-                    <p class="hero-subtitle">Soluções robustas e inovadoras para manter seu patrimônio sempre protegido</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Proteja seu veículo com 
+                        <span class="highlight">segurança total</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Tranquilidade em cada quilômetro. A AutoProtecta oferece proteção veicular completa, 
+                        rápida e confiável, sem que você precise sair de casa.
+                    </p>
                     <div class="hero-actions">
-                        <button class="btn-primary btn-large">
-                            <i class="material-icons">security</i>
-                            Solicitar Cotação
-                        </button>
-                        <button class="btn-secondary btn-large">
-                            <i class="fas fa-play"></i>
+                        <a href="#cotacao" class="btn btn-primary btn-large">
+                            Começar Agora
+                        </a>
+                        <a href="#saiba-mais" class="btn btn-outline btn-large">
                             Saiba Mais
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="hero-visual">
                     <div class="hero-image">
-                        <img src="assets/images/logo-autoprotecta.png" alt="Proteção Veicular Autoprotecta" class="hero-img">
+                        <div class="rhino-symbol"><i class="fas fa-shield-alt"></i></div>
+                        <div class="protection-shield"></div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Features Section -->
-        <section class="features">
-            <div class="container">
-                <h2 class="section-title">Nossos Diferenciais</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon sentinela">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h3 class="feature-title">Sentinela</h3>
-                        <p class="feature-description">Vigilância constante e defesa robusta para seu patrimônio</p>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-icon altruista">
-                            <i class="fas fa-heart"></i>
-                        </div>
-                        <h3 class="feature-title">Altruísta</h3>
-                        <p class="feature-description">Cuidado e afeto em cada atendimento, pensando sempre em você</p>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-icon valente">
-                            <i class="fas fa-fist-raised"></i>
-                        </div>
-                        <h3 class="feature-title">Valente</h3>
-                        <p class="feature-description">Coragem e bravura para enfrentar qualquer desafio</p>
-                    </div>
-                </div>
+    <!-- Features Section -->
+    <section class="features" id="saiba-mais">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Por que escolher a AutoProtecta?</h2>
+                <p class="section-subtitle">
+                    Nossa missão é ser o guardião incansável do seu patrimônio, 
+                    oferecendo proteção com inovação e transparência.
+                </p>
             </div>
-        </section>
-
-        <!-- Services Section -->
-        <section class="services">
-            <div class="container">
-                <div class="services-header">
-                    <h2 class="section-title">Nossos Serviços</h2>
-                    <p class="section-subtitle">Proteção completa para diferentes necessidades</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon sentinela">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">O Sentinela</h3>
+                    <p class="feature-description">
+                        Defesa e vigilância constante. Somos o guardião incansável 
+                        do que é valioso para você.
+                    </p>
                 </div>
                 
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="card-diagonal-mask"></div>
-                        <div class="service-icon">
-                            <i class="material-icons">directions_car</i>
-                        </div>
-                        <h3>Proteção Veicular</h3>
-                        <p>Cobertura completa para seu automóvel com atendimento 24h</p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Guincho ilimitado</li>
-                            <li><i class="fas fa-check"></i> Carro reserva</li>
-                            <li><i class="fas fa-check"></i> Assistência técnica</li>
-                        </ul>
-                        <button class="btn-outline">
-                            <i class="fas fa-arrow-right"></i>
-                            Saiba Mais
-                        </button>
+                <div class="feature-card">
+                    <div class="feature-icon altruista">
+                        <i class="fas fa-heart"></i>
                     </div>
-                    
-                    <div class="service-card">
-                        <div class="card-diagonal-mask"></div>
-                        <div class="service-icon">
-                            <i class="material-icons">motorcycle</i>
-                        </div>
-                        <h3>Proteção Moto</h3>
-                        <p>Cuidado especial para motociclistas com cobertura personalizada</p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Socorro especializado</li>
-                            <li><i class="fas fa-check"></i> Equipamentos de segurança</li>
-                            <li><i class="fas fa-check"></i> Reparo no local</li>
-                        </ul>
-                        <button class="btn-outline">
-                            <i class="fas fa-arrow-right"></i>
-                            Saiba Mais
-                        </button>
+                    <h3 class="feature-title">O Altruísta</h3>
+                    <p class="feature-description">
+                        Cuidado e afeto em cada interação. Defendemos suas causas 
+                        com compaixão e generosidade.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon valente">
+                        <i class="fas fa-bolt"></i>
                     </div>
-                    
-                    <div class="service-card">
-                        <div class="card-diagonal-mask"></div>
-                        <div class="service-icon">
-                            <i class="material-icons">local_shipping</i>
-                        </div>
-                        <h3>Frota Empresarial</h3>
-                        <p>Soluções corporativas para frotas de qualquer tamanho</p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Gestão centralizada</li>
-                            <li><i class="fas fa-check"></i> Relatórios detalhados</li>
-                            <li><i class="fas fa-check"></i> Suporte dedicado</li>
-                        </ul>
-                        <button class="btn-outline">
-                            <i class="fas fa-arrow-right"></i>
-                            Saiba Mais
-                        </button>
-                    </div>
+                    <h3 class="feature-title">O Valente</h3>
+                    <p class="feature-description">
+                        Coragem e determinação para superar desafios e construir 
+                        um futuro de glórias para você.
+                    </p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- CTA Section -->
-        <section class="cta">
-            <div class="container">
-                <div class="cta-content">
-                    <div class="grafismo-diagonal"></div>
-                    <h2>Pronto para Proteger seu Patrimônio?</h2>
-                    <p>Faça sua cotação agora e descubra por que somos a escolha de milhares de brasileiros</p>
-                    <div class="cta-actions">
-                        <button class="btn-primary btn-large">
-                            <i class="fas fa-calculator"></i>
-                            Fazer Cotação
-                        </button>
-                        <div class="contact-info">
-                            <span><i class="fas fa-phone"></i> 0800 123 4567</span>
-                            <span><i class="fas fa-whatsapp"></i> WhatsApp</span>
-                        </div>
+    <!-- Services Section -->
+    <section class="services" id="protecao">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Serviços de Proteção</h2>
+                <p class="section-subtitle">
+                    Soluções completas e personalizadas para proteger seu veículo 
+                    com a máxima eficiência e transparência.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
                     </div>
+                    <h3>Proteção Veicular Completa</h3>
+                    <p>
+                        Cobertura abrangente para todos os tipos de veículos, 
+                        incluindo carros, motos, caminhões e utilitários.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Cobertura contra roubo e furto</li>
+                        <li><i class="fas fa-check"></i> Proteção contra danos acidentais</li>
+                        <li><i class="fas fa-check"></i> Assistência 24h em todo Brasil</li>
+                        <li><i class="fas fa-check"></i> Indenização rápida e justa</li>
+                    </ul>
+                    <a href="#cotacao" class="btn btn-outline">Ver Planos</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Processo 100% Digital</h3>
+                    <p>
+                        Contrate sua proteção veicular sem sair de casa, 
+                        com processo simples, rápido e seguro.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Cotação online em minutos</li>
+                        <li><i class="fas fa-check"></i> Documentação digital</li>
+                        <li><i class="fas fa-check"></i> Pagamento facilitado</li>
+                        <li><i class="fas fa-check"></i> Certificado instantâneo</li>
+                    </ul>
+                    <a href="#cotacao" class="btn btn-outline">Começar Agora</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Atendimento Personalizado</h3>
+                    <p>
+                        Suporte especializado e humanizado para resolver 
+                        suas dúvidas e necessidades com agilidade.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Especialistas dedicados</li>
+                        <li><i class="check">✓</i> Resposta em até 2 horas</li>
+                        <li><i class="fas fa-check"></i> Acompanhamento completo</li>
+                        <li><i class="fas fa-check"></i> Suporte em português</li>
+                    </ul>
+                    <a href="#suporte" class="btn btn-outline">Falar Conosco</a>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="cotacao">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Proteja seu veículo hoje mesmo</h2>
+                <p>
+                    Junte-se a milhares de clientes que já escolheram a AutoProtecta 
+                    para proteger seu patrimônio com segurança e tranquilidade.
+                </p>
+                <div class="cta-actions">
+                    <a href="#formulario" class="btn btn-primary btn-large">
+                        Fazer Cotação Gratuita
+                    </a>
+                </div>
+                
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> 0800 123 4567</span>
+                    <span><i class="fas fa-envelope"></i> contato@autoprotecta.com.br</span>
+                    <span><i class="fas fa-clock"></i> Atendimento 24h</span>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form" id="formulario">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Solicite sua cotação gratuita</h2>
+                    <p>Preencha os dados abaixo e receba uma proposta personalizada em minutos</p>
+                </div>
+                
+                <form class="quote-form" id="quoteForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nome completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="vehicle">Tipo de veículo</label>
+                            <select id="vehicle" name="vehicle" required>
+                                <option value="">Selecione...</option>
+                                <option value="carro">Carro</option>
+                                <option value="moto">Moto</option>
+                                <option value="caminhao">Caminhão</option>
+                                <option value="utilitario">Utilitário</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensagem (opcional)</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-large">
+                        Solicitar Cotação
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                                    <div class="brand-logo-footer">
-                    <img src="assets/images/logo-autoprotecta.png" alt="Autoprotecta" class="logo-image-footer">
-                </div>
-                    <p>Proteção veicular que inspira confiança, robustez e inovação.</p>
+                    <div class="footer-logo">
+                        <span class="logo-text">AutoProtecta</span>
+                        <div class="logo-symbol"><i class="fas fa-shield-alt"></i></div>
+                    </div>
+                    <p>
+                        Proteção veicular com inovação e transparência. 
+                        Seu patrimônio merece o melhor cuidado.
+                    </p>
                 </div>
                 
                 <div class="footer-links">
                     <div class="link-group">
-                        <h4>Serviços</h4>
+                        <h4>Produtos</h4>
                         <ul>
-                                                    <li><a href="pages/protecao-page.html"><i class="fas fa-car"></i> Proteção Veicular</a></li>
-                        <li><a href="pages/veiculos-page.html"><i class="fas fa-motorcycle"></i> Proteção Moto</a></li>
-                        <li><a href="pages/veiculos-page.html"><i class="fas fa-truck"></i> Frota Empresarial</a></li>
+                            <li><a href="#protecao">Proteção Veicular</a></li>
+                            <li><a href="#veiculos">Tipos de Veículos</a></li>
+                            <li><a href="#planos">Planos e Coberturas</a></li>
                         </ul>
                     </div>
                     
                     <div class="link-group">
                         <h4>Suporte</h4>
                         <ul>
-                                                    <li><a href="pages/suporte-page.html"><i class="fas fa-headset"></i> Atendimento</a></li>
-                        <li><a href="pages/suporte-page.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
-                        <li><a href="pages/suporte-page.html"><i class="fas fa-file-contract"></i> Contratos</a></li>
+                            <li><a href="#suporte">Central de Ajuda</a></li>
+                            <li><a href="#contato">Fale Conosco</a></li>
+                            <li><a href="#faq">Perguntas Frequentes</a></li>
                         </ul>
                     </div>
                     
                     <div class="link-group">
-                        <h4>Contato</h4>
+                        <h4>Empresa</h4>
                         <ul>
-                            <li><i class="fas fa-phone"></i> 0800 123 4567</li>
-                            <li><i class="fas fa-envelope"></i> contato@autoprotecta.com.br</li>
-                            <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP</li>
+                            <li><a href="#sobre">Sobre Nós</a></li>
+                            <li><a href="#politica">Política de Privacidade</a></li>
+                            <li><a href="#termos">Termos de Uso</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Autoprotecta. Todos os direitos reservados.</p>
+                <p>&copy; 2024 AutoProtecta. Todos os direitos reservados.</p>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript -->
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
