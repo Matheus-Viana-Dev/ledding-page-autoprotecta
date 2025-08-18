@@ -1,0 +1,1865 @@
+<!-- COMPONENTES ADICIONAIS AUTOPROTECTA -->
+<!-- Este arquivo contém componentes que podem ser incluídos conforme necessário -->
+
+<!-- ================================================
+     CALCULADORA DE COTAÇÃO
+     ================================================ -->
+<section class="quote-calculator-section" style="display: none;" id="quote-section">
+  <div class="container">
+    <div class="calculator-wrapper">
+      <h2 class="section-title">Calcule sua Cotação</h2>
+      <form class="quote-calculator card">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="vehicleType">Tipo de Veículo</label>
+            <select name="vehicleType" id="vehicleType" required>
+              <option value="">Selecione...</option>
+              <option value="car">Automóvel</option>
+              <option value="motorcycle">Motocicleta</option>
+              <option value="truck">Caminhão</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="vehicleValue">Valor do Veículo</label>
+            <input type="number" name="vehicleValue" id="vehicleValue" placeholder="R$ 0,00" required>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="vehicleYear">Ano do Veículo</label>
+            <input type="number" name="vehicleYear" id="vehicleYear" min="1990" max="2025" placeholder="2023" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="coverage">Tipo de Cobertura</label>
+            <select name="coverage" id="coverage" required>
+              <option value="">Selecione...</option>
+              <option value="basic">Básica</option>
+              <option value="complete">Completa</option>
+              <option value="premium">Premium</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="zipCode">CEP</label>
+          <input type="text" name="zipCode" id="zipCode" placeholder="00000-000" maxlength="9" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="driverAge">Idade do Condutor Principal</label>
+          <input type="number" name="driverAge" id="driverAge" min="18" max="100" placeholder="30" required>
+        </div>
+        
+        <button type="submit" class="btn-primary btn-large">
+          <i class="fas fa-calculator"></i>
+          Calcular Cotação
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     CHAT WIDGET
+     ================================================ -->
+<div class="chat-toggle" data-tooltip="Fale conosco">
+  <i class="fas fa-comments"></i>
+</div>
+
+<div class="chat-widget">
+  <div class="chat-header">
+    <div class="chat-agent">
+      <div class="agent-avatar">
+        <i class="fas fa-robot"></i>
+      </div>
+      <div class="agent-info">
+        <span class="agent-name">Assistente Autoprotecta</span>
+        <span class="agent-status">Online</span>
+      </div>
+    </div>
+    <button class="chat-close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  
+  <div class="chat-messages">
+    <!-- Mensagens serão inseridas aqui via JavaScript -->
+  </div>
+  
+  <div class="chat-input">
+    <input type="text" placeholder="Digite sua mensagem...">
+    <button class="chat-send">
+      <i class="fas fa-paper-plane"></i>
+    </button>
+  </div>
+</div>
+
+<!-- ================================================
+     FORMULÁRIO DE CONTATO
+     ================================================ -->
+<section class="contact-form-section" style="display: none;" id="contact-section">
+  <div class="container">
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <h2>Entre em Contato</h2>
+        <p>Nossa equipe está pronta para atender você com a máxima agilidade e profissionalismo.</p>
+        
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Telefone</h4>
+              <p>0800 123 4567</p>
+              <span>Atendimento 24h</span>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p>contato@autoprotecta.com.br</p>
+              <span>Resposta em até 2h</span>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="contact-details">
+              <h4>WhatsApp</h4>
+              <p>(11) 99999-9999</p>
+              <span>Chat direto</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <form class="contact-form card">
+        <h3>Envie sua Mensagem</h3>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="contactName">Nome Completo</label>
+            <input type="text" name="contactName" id="contactName" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="contactPhone">Telefone</label>
+            <input type="tel" name="contactPhone" id="contactPhone" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="contactEmail">Email</label>
+          <input type="email" name="contactEmail" id="contactEmail" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="contactSubject">Assunto</label>
+          <select name="contactSubject" id="contactSubject" required>
+            <option value="">Selecione o assunto...</option>
+            <option value="quote">Solicitar Cotação</option>
+            <option value="claim">Acionar Seguro</option>
+            <option value="support">Suporte Técnico</option>
+            <option value="complaint">Reclamação</option>
+            <option value="suggestion">Sugestão</option>
+            <option value="other">Outros</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="contactMessage">Mensagem</label>
+          <textarea name="contactMessage" id="contactMessage" rows="5" required></textarea>
+        </div>
+        
+        <div class="form-group checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" name="consent" required>
+            <span class="checkmark"></span>
+            Concordo com os <a href="#" target="_blank">termos de uso</a> e <a href="#" target="_blank">política de privacidade</a>
+          </label>
+        </div>
+        
+        <button type="submit" class="btn-primary btn-large">
+          <i class="fas fa-paper-plane"></i>
+          Enviar Mensagem
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     MODAL DE LOADING
+     ================================================ -->
+<div class="loading-modal modal" id="loadingModal">
+  <div class="modal-overlay">
+    <div class="loading-content">
+      <div class="spinner"></div>
+      <h3>Processando...</h3>
+      <p>Aguarde enquanto calculamos sua cotação</p>
+    </div>
+  </div>
+</div>
+
+<!-- ================================================
+     SEÇÃO DE DEPOIMENTOS
+     ================================================ -->
+<section class="testimonials" style="display: none;" id="testimonials-section">
+  <div class="container">
+    <h2 class="section-title">O que Nossos Clientes Dizem</h2>
+    
+    <div class="testimonials-grid">
+      <div class="testimonial-card" data-animate="fadeInUp">
+        <div class="testimonial-content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"Excelente atendimento! Quando precisei acionar o guincho, chegaram em menos de 30 minutos. Super recomendo a Autoprotecta!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="author-info">
+              <h4>Maria Silva</h4>
+              <span>Cliente desde 2022</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card" data-animate="fadeInUp">
+        <div class="testimonial-content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"Proteção completa e preço justo. O carro reserva salvou minha semana quando meu carro ficou na oficina."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="author-info">
+              <h4>João Santos</h4>
+              <span>Cliente desde 2021</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card" data-animate="fadeInUp">
+        <div class="testimonial-content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"Atendimento humanizado e eficiente. Sinto que posso confiar na Autoprotecta para proteger minha família."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="author-info">
+              <h4>Ana Costa</h4>
+              <span>Cliente desde 2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     FAQ SECTION
+     ================================================ -->
+<section class="faq-section" style="display: none;" id="faq-section">
+  <div class="container">
+    <h2 class="section-title">Perguntas Frequentes</h2>
+    
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Como funciona a proteção veicular?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>A proteção veicular é um sistema de mútua ajuda entre associados que oferece cobertura para diversos tipos de sinistros como roubo, furto, colisão, incêndio e assistência 24 horas. Diferente do seguro tradicional, funciona como uma cooperativa onde todos contribuem para ajudar quem precisa.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Qual a diferença entre proteção veicular e seguro?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>A principal diferença está na estrutura: o seguro é um contrato com uma seguradora, enquanto a proteção veicular é baseada em solidariedade mútua. A proteção veicular geralmente oferece um custo-benefício melhor e atendimento mais humanizado.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Como acionar a proteção em caso de sinistro?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>É muito simples! Você pode acionar pelo telefone 0800 123 4567, WhatsApp ou através do nosso aplicativo 24 horas por dia, 7 dias por semana. Nossa central de atendimento irá orientar você em todos os procedimentos necessários.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Posso usar qualquer oficina?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Temos uma rede credenciada de oficinas especializadas, mas você também pode escolher uma oficina de sua preferência. Em ambos os casos, garantimos a qualidade do serviço e acompanhamos todo o processo de reparo.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Quanto tempo demora a aprovação?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Nosso processo de aprovação é rápido e eficiente. Após o envio da documentação completa, a aprovação acontece em até 48 horas úteis. Casos urgentes são priorizados e podem ser aprovados no mesmo dia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     SEÇÃO DE PARCEIROS/CREDENCIADOS
+     ================================================ -->
+<section class="partners-section" style="display: none;" id="partners-section">
+  <div class="container">
+    <h2 class="section-title">Nossos Parceiros</h2>
+    <p class="section-subtitle">Rede credenciada de confiança em todo o Brasil</p>
+    
+    <div class="partners-grid">
+      <div class="partner-category">
+        <div class="category-icon">
+          <i class="fas fa-tools"></i>
+        </div>
+        <h3>Oficinas Credenciadas</h3>
+        <p>Mais de 5.000 oficinas especializadas em todo território nacional</p>
+        <div class="stats">
+          <span class="stat-number">5.000+</span>
+          <span class="stat-label">Oficinas</span>
+        </div>
+      </div>
+      
+      <div class="partner-category">
+        <div class="category-icon">
+          <i class="fas fa-truck"></i>
+        </div>
+        <h3>Guinchos 24h</h3>
+        <p>Frota própria e parceiros estratégicos para atendimento rápido</p>
+        <div class="stats">
+          <span class="stat-number">800+</span>
+          <span class="stat-label">Guinchos</span>
+        </div>
+      </div>
+      
+      <div class="partner-category">
+        <div class="category-icon">
+          <i class="fas fa-car-side"></i>
+        </div>
+        <h3>Carros Reserva</h3>
+        <p>Locadoras parceiras com veículos disponíveis em todas as capitais</p>
+        <div class="stats">
+          <span class="stat-number">2.500+</span>
+          <span class="stat-label">Veículos</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     CALCULADORA AVANÇADA (MODAL)
+     ================================================ -->
+<div class="modal advanced-calculator-modal" id="advancedCalculator">
+  <div class="modal-overlay">
+    <div class="modal-content large">
+      <div class="modal-header">
+        <h3>Calculadora Avançada de Proteção</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="calculator-steps">
+          <div class="step active" data-step="1">
+            <h4>1. Informações do Veículo</h4>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Marca</label>
+                <select name="vehicleBrand" required>
+                  <option value="">Selecione...</option>
+                  <option value="volkswagen">Volkswagen</option>
+                  <option value="chevrolet">Chevrolet</option>
+                  <option value="ford">Ford</option>
+                  <option value="fiat">Fiat</option>
+                  <option value="toyota">Toyota</option>
+                  <option value="honda">Honda</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Modelo</label>
+                <select name="vehicleModel" required>
+                  <option value="">Selecione a marca primeiro</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Ano</label>
+                <select name="vehicleYear" required>
+                  <option value="">Selecione...</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Combustível</label>
+                <select name="fuelType" required>
+                  <option value="">Selecione...</option>
+                  <option value="flex">Flex</option>
+                  <option value="gasoline">Gasolina</option>
+                  <option value="diesel">Diesel</option>
+                  <option value="electric">Elétrico</option>
+                  <option value="hybrid">Híbrido</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
+          <div class="step" data-step="2">
+            <h4>2. Perfil do Condutor</h4>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Idade do Condutor Principal</label>
+                <input type="number" name="mainDriverAge" min="18" max="100" required>
+              </div>
+              <div class="form-group">
+                <label>Tempo de Habilitação</label>
+                <select name="licenseTime" required>
+                  <option value="">Selecione...</option>
+                  <option value="0-2">Até 2 anos</option>
+                  <option value="2-5">2 a 5 anos</option>
+                  <option value="5-10">5 a 10 anos</option>
+                  <option value="10+">Mais de 10 anos</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Uso do Veículo</label>
+                <select name="vehicleUsage" required>
+                  <option value="">Selecione...</option>
+                  <option value="personal">Pessoal</option>
+                  <option value="work">Trabalho</option>
+                  <option value="uber">Uber/99</option>
+                  <option value="delivery">Delivery</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>KM Rodados por Mês</label>
+                <select name="monthlyKm" required>
+                  <option value="">Selecione...</option>
+                  <option value="0-1000">Até 1.000 km</option>
+                  <option value="1000-2000">1.000 a 2.000 km</option>
+                  <option value="2000-3000">2.000 a 3.000 km</option>
+                  <option value="3000+">Mais de 3.000 km</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
+          <div class="step" data-step="3">
+            <h4>3. Localização e Segurança</h4>
+            <div class="form-row">
+              <div class="form-group">
+                <label>CEP de Pernoite</label>
+                <input type="text" name="overnightZip" placeholder="00000-000" maxlength="9" required>
+              </div>
+              <div class="form-group">
+                <label>Tipo de Garagem</label>
+                <select name="garageType" required>
+                  <option value="">Selecione...</option>
+                  <option value="covered">Garagem Coberta</option>
+                  <option value="open">Garagem Aberta</option>
+                  <option value="street">Rua</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Dispositivos de Segurança</label>
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="security[]" value="alarm">
+                  <span class="checkmark"></span>
+                  Alarme
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="security[]" value="tracker">
+                  <span class="checkmark"></span>
+                  Rastreador
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="security[]" value="steering-lock">
+                  <span class="checkmark"></span>
+                  Trava de Direção
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="security[]" value="immobilizer">
+                  <span class="checkmark"></span>
+                  Imobilizador
+                </label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="step" data-step="4">
+            <h4>4. Coberturas Desejadas</h4>
+            <div class="coverage-options">
+              <div class="coverage-option">
+                <label class="coverage-label">
+                  <input type="checkbox" name="coverages[]" value="theft" checked>
+                  <span class="coverage-info">
+                    <strong>Roubo e Furto</strong>
+                    <p>Cobertura contra roubo e furto do veículo</p>
+                  </span>
+                  <span class="coverage-price">Incluído</span>
+                </label>
+              </div>
+              
+              <div class="coverage-option">
+                <label class="coverage-label">
+                  <input type="checkbox" name="coverages[]" value="collision" checked>
+                  <span class="coverage-info">
+                    <strong>Colisão</strong>
+                    <p>Cobertura para danos em acidentes de trânsito</p>
+                  </span>
+                  <span class="coverage-price">Incluído</span>
+                </label>
+              </div>
+              
+              <div class="coverage-option">
+                <label class="coverage-label">
+                  <input type="checkbox" name="coverages[]" value="fire">
+                  <span class="coverage-info">
+                    <strong>Incêndio</strong>
+                    <p>Cobertura contra incêndio do veículo</p>
+                  </span>
+                  <span class="coverage-price">+R$ 15/mês</span>
+                </label>
+              </div>
+              
+              <div class="coverage-option">
+                <label class="coverage-label">
+                  <input type="checkbox" name="coverages[]" value="glass">
+                  <span class="coverage-info">
+                    <strong>Vidros</strong>
+                    <p>Cobertura para quebra de vidros</p>
+                  </span>
+                  <span class="coverage-price">+R$ 25/mês</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="calculator-navigation">
+          <button type="button" class="btn-secondary step-prev" style="display: none;">
+            <i class="fas fa-arrow-left"></i>
+            Anterior
+          </button>
+          
+          <button type="button" class="btn-primary step-next">
+            Próximo
+            <i class="fas fa-arrow-right"></i>
+          </button>
+          
+          <button type="button" class="btn-primary calculate-final" style="display: none;">
+            <i class="fas fa-calculator"></i>
+            Calcular Proteção
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================================================
+     ESTILOS CSS ADICIONAIS PARA COMPONENTES
+     ================================================ -->
+<style>
+/* Estilos para formulários */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-xs);
+  color: var(--smoky-black);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 2px solid #ddd;
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+  transition: var(--transition-normal);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--orioles-orange);
+  outline: none;
+}
+
+/* Checkbox personalizado */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.checkbox-label {
+  display: flex !important;
+  align-items: center;
+  gap: var(--spacing-sm);
+  cursor: pointer;
+  font-weight: normal !important;
+}
+
+.checkbox-label input[type="checkbox"] {
+  display: none;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--orioles-orange);
+  border-radius: var(--radius-sm);
+  position: relative;
+  transition: var(--transition-normal);
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark {
+  background-color: var(--orioles-orange);
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark::after {
+  content: '✓';
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Estilos para chat */
+.chat-header {
+  background: var(--orioles-orange);
+  color: white;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat-agent {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.agent-avatar {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agent-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.agent-name {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sm);
+}
+
+.agent-status {
+  font-size: var(--font-size-xs);
+  opacity: 0.8;
+}
+
+.chat-messages {
+  height: 300px;
+  overflow-y: auto;
+  padding: var(--spacing-md);
+  background: #f8f9fa;
+}
+
+.chat-message {
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-message.user {
+  align-items: flex-end;
+}
+
+.chat-message.bot {
+  align-items: flex-start;
+}
+
+.message-content {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  background: white;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-lg);
+  max-width: 80%;
+  box-shadow: var(--shadow-sm);
+}
+
+.chat-message.user .message-content {
+  background: var(--orioles-orange);
+  color: white;
+  flex-direction: row-reverse;
+}
+
+.message-time {
+  font-size: var(--font-size-xs);
+  color: #666;
+  margin-top: var(--spacing-xs);
+}
+
+.chat-input {
+  display: flex;
+  padding: var(--spacing-md);
+  background: white;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  border-top: 1px solid #eee;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 1px solid #ddd;
+  border-radius: var(--radius-md);
+  margin-right: var(--spacing-sm);
+}
+
+.chat-send {
+  background: var(--orioles-orange);
+  color: white;
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition-normal);
+}
+
+.chat-send:hover {
+  background: #e53e13;
+}
+
+/* Estilos para depoimentos */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.testimonial-card {
+  background: white;
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-normal);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.stars {
+  color: #fbbf24;
+  margin-bottom: var(--spacing-md);
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.author-avatar {
+  width: 50px;
+  height: 50px;
+  background: var(--orioles-orange);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.author-info h4 {
+  margin: 0;
+  font-size: var(--font-size-base);
+}
+
+.author-info span {
+  font-size: var(--font-size-sm);
+  color: #666;
+}
+
+/* Estilos para FAQ */
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border: 2px solid var(--smoky-black);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-md);
+  overflow: hidden;
+}
+
+.faq-question {
+  background: white;
+  padding: var(--spacing-lg);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: var(--transition-normal);
+}
+
+.faq-question:hover {
+  background: #f8f9fa;
+}
+
+.faq-question h3 {
+  margin: 0;
+  font-size: var(--font-size-lg);
+}
+
+.faq-question i {
+  color: var(--orioles-orange);
+  transition: var(--transition-normal);
+}
+
+.faq-item.active .faq-question i {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 0 var(--spacing-lg) var(--spacing-lg);
+  display: none;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+/* Estilos para parceiros */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.partner-category {
+  text-align: center;
+  padding: var(--spacing-xl);
+  background: white;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.category-icon {
+  width: 80px;
+  height: 80px;
+  background: var(--orioles-orange);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--spacing-lg);
+  font-size: var(--font-size-2xl);
+  color: white;
+}
+
+.stats {
+  margin-top: var(--spacing-lg);
+}
+
+.stat-number {
+  display: block;
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-black);
+  color: var(--orioles-orange);
+}
+
+.stat-label {
+  font-size: var(--font-size-sm);
+  color: #666;
+}
+
+/* Calculadora avançada */
+.modal-content.large {
+  max-width: 800px;
+}
+
+.calculator-steps {
+  min-height: 400px;
+}
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+.coverage-options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.coverage-option {
+  border: 2px solid #ddd;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  transition: var(--transition-normal);
+}
+
+.coverage-option:has(input:checked) {
+  border-color: var(--orioles-orange);
+  background: rgba(251, 69, 22, 0.05);
+}
+
+.coverage-label {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: 0 !important;
+}
+
+.coverage-info {
+  flex: 1;
+}
+
+.coverage-info strong {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+}
+
+.coverage-info p {
+  margin: 0;
+  color: #666;
+  font-size: var(--font-size-sm);
+}
+
+.coverage-price {
+  font-weight: var(--font-weight-bold);
+  color: var(--orioles-orange);
+}
+
+.calculator-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid #eee;
+}
+
+/* Responsividade para componentes */
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+  
+  .chat-widget {
+    width: calc(100vw - 40px);
+    right: 20px;
+    left: 20px;
+  }
+  
+  .modal-content.large {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+</style>
+
+<!-- JavaScript para funcionalidades dos componentes -->
+<script>
+// Inicializar componentes quando o DOM estiver carregado
+document.addEventListener('DOMContentLoaded', function() {
+  initFAQ();
+  initAdvancedCalculator();
+  initContactForm();
+});
+
+// Função para FAQ
+function initFAQ() {
+  document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+      const faqItem = question.parentElement;
+      const isActive = faqItem.classList.contains('active');
+      
+      // Fechar todos os itens
+      document.querySelectorAll('.faq-item').forEach(item => {
+        item.classList.remove('active');
+      });
+      
+      // Abrir o item clicado se não estava ativo
+      if (!isActive) {
+        faqItem.classList.add('active');
+      }
+    });
+  });
+}
+
+// Função para calculadora avançada
+function initAdvancedCalculator() {
+  let currentStep = 1;
+  const totalSteps = 4;
+  
+  document.querySelectorAll('.step-next').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (currentStep < totalSteps) {
+        document.querySelector(`.step[data-step="${currentStep}"]`).classList.add('active');
+        
+        updateNavigationButtons();
+      }
+    });
+  });
+  
+  function updateNavigationButtons() {
+    const prevBtn = document.querySelector('.step-prev');
+    const nextBtn = document.querySelector('.step-next');
+    const calculateBtn = document.querySelector('.calculate-final');
+    
+    // Mostrar/ocultar botão anterior
+    if (currentStep === 1) {
+      prevBtn.style.display = 'none';
+    } else {
+      prevBtn.style.display = 'inline-flex';
+    }
+    
+    // Mostrar botão de calcular no último step
+    if (currentStep === totalSteps) {
+      nextBtn.style.display = 'none';
+      calculateBtn.style.display = 'inline-flex';
+    } else {
+      nextBtn.style.display = 'inline-flex';
+      calculateBtn.style.display = 'none';
+    }
+  }
+  
+  // Função para calcular cotação final
+  document.querySelector('.calculate-final')?.addEventListener('click', () => {
+    // Simular processamento
+    AutoprotectaFeatures.showNotification('Calculando sua cotação personalizada...', 'info');
+    
+    setTimeout(() => {
+      const price = Math.floor(Math.random() * 200) + 150; // Preço entre R$ 150-350
+      AutoprotectaFeatures.showQuoteResult(price);
+      UIInteractions.closeModal();
+    }, 2000);
+  });
+}
+
+// Função para formulário de contato
+function initContactForm() {
+  const contactForm = document.querySelector('.contact-form');
+  
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      // Simular envio
+      AutoprotectaFeatures.showNotification('Enviando mensagem...', 'info');
+      
+      setTimeout(() => {
+        AutoprotectaFeatures.showNotification('Mensagem enviada com sucesso! Entraremos em contato em breve.', 'success');
+        contactForm.reset();
+      }, 1500);
+    });
+  }
+  
+  // Máscara para telefone
+  const phoneInputs = document.querySelectorAll('input[type="tel"]');
+  phoneInputs.forEach(input => {
+    input.addEventListener('input', (e) => {
+      let value = e.target.value.replace(/\D/g, '');
+      value = value.replace(/^(\d{2})(\d)/g, '($1) $2');
+      value = value.replace(/(\d)(\d{4})$/, '$1-$2');
+      e.target.value = value;
+    });
+  });
+  
+  // Máscara para CEP
+  const cepInputs = document.querySelectorAll('input[name*="zip"], input[name*="Zip"], input[name*="CEP"], input[name*="cep"]');
+  cepInputs.forEach(input => {
+    input.addEventListener('input', (e) => {
+      let value = e.target.value.replace(/\D/g, '');
+      value = value.replace(/^(\d{5})(\d)/, '$1-$2');
+      e.target.value = value;
+    });
+  });
+}
+</script>
+
+<!-- ================================================
+     SEÇÃO DE ESTATÍSTICAS
+     ================================================ -->
+<section class="stats-section" style="display: none;" id="stats-section">
+  <div class="container">
+    <h2 class="section-title">Autoprotecta em Números</h2>
+    
+    <div class="stats-grid">
+      <div class="stat-item" data-animate="fadeInUp">
+        <div class="stat-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <div class="stat-content">
+          <span class="stat-number" data-count="150000">0</span>
+          <span class="stat-label">Clientes Protegidos</span>
+        </div>
+      </div>
+      
+      <div class="stat-item" data-animate="fadeInUp">
+        <div class="stat-icon">
+          <i class="fas fa-clock"></i>
+        </div>
+        <div class="stat-content">
+          <span class="stat-number" data-count="25">0</span>
+          <span class="stat-label">Min. Tempo Médio</span>
+        </div>
+      </div>
+      
+      <div class="stat-item" data-animate="fadeInUp">
+        <div class="stat-icon">
+          <i class="fas fa-handshake"></i>
+        </div>
+        <div class="stat-content">
+          <span class="stat-number" data-count="98">0</span>
+          <span class="stat-label">% Satisfação</span>
+        </div>
+      </div>
+      
+      <div class="stat-item" data-animate="fadeInUp">
+        <div class="stat-icon">
+          <i class="fas fa-map-marked-alt"></i>
+        </div>
+        <div class="stat-content">
+          <span class="stat-number" data-count="26">0</span>
+          <span class="stat-label">Estados Atendidos</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     SIMULADOR DE ECONOMIA
+     ================================================ -->
+<section class="savings-simulator" style="display: none;" id="savings-section">
+  <div class="container">
+    <div class="simulator-wrapper">
+      <div class="simulator-content">
+        <h2>Quanto Você Pode Economizar?</h2>
+        <p>Compare os custos da proteção veicular com seguro tradicional</p>
+        
+        <div class="simulator-form">
+          <div class="form-group">
+            <label>Valor do seu veículo</label>
+            <input type="range" id="vehicleValueRange" min="20000" max="200000" value="50000" step="5000">
+            <span class="range-value" id="vehicleValueDisplay">R$ 50.000</span>
+          </div>
+          
+          <div class="comparison-results">
+            <div class="result-item insurance">
+              <h3>Seguro Tradicional</h3>
+              <div class="result-price" id="insurancePrice">R$ 2.850/ano</div>
+              <ul class="result-features">
+                <li>Franquia alta</li>
+                <li>Burocracia excessiva</li>
+                <li>Atendimento impessoal</li>
+              </ul>
+            </div>
+            
+            <div class="result-item protection">
+              <h3>Proteção Autoprotecta</h3>
+              <div class="result-price" id="protectionPrice">R$ 1.680/ano</div>
+              <div class="savings-badge" id="savingsAmount">Economia de R$ 1.170</div>
+              <ul class="result-features">
+                <li>Sem franquia</li>
+                <li>Atendimento humanizado</li>
+                <li>Aprovação rápida</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     SEÇÃO DE BLOG/ARTIGOS
+     ================================================ -->
+<section class="blog-section" style="display: none;" id="blog-section">
+  <div class="container">
+    <h2 class="section-title">Dicas e Artigos</h2>
+    <p class="section-subtitle">Informações úteis sobre proteção veicular</p>
+    
+    <div class="blog-grid">
+      <article class="blog-card" data-animate="fadeInUp">
+        <div class="blog-image">
+          <div class="blog-category">Dicas</div>
+          <div class="placeholder-image">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+        </div>
+        <div class="blog-content">
+          <h3>Como Escolher a Melhor Proteção Veicular</h3>
+          <p>Guia completo com tudo que você precisa saber antes de contratar uma proteção veicular...</p>
+          <div class="blog-meta">
+            <span class="blog-date">15 Jan 2025</span>
+            <span class="blog-read-time">5 min de leitura</span>
+          </div>
+          <a href="#" class="blog-link">Ler artigo</a>
+        </div>
+      </article>
+      
+      <article class="blog-card" data-animate="fadeInUp">
+        <div class="blog-image">
+          <div class="blog-category">Segurança</div>
+          <div class="placeholder-image">
+            <i class="fas fa-car-crash"></i>
+          </div>
+        </div>
+        <div class="blog-content">
+          <h3>10 Dicas para Evitar Roubos de Veículos</h3>
+          <p>Medidas preventivas que podem proteger seu patrimônio e reduzir riscos...</p>
+          <div class="blog-meta">
+            <span class="blog-date">12 Jan 2025</span>
+            <span class="blog-read-time">8 min de leitura</span>
+          </div>
+          <a href="#" class="blog-link">Ler artigo</a>
+        </div>
+      </article>
+      
+      <article class="blog-card" data-animate="fadeInUp">
+        <div class="blog-image">
+          <div class="blog-category">Manutenção</div>
+          <div class="placeholder-image">
+            <i class="fas fa-tools"></i>
+          </div>
+        </div>
+        <div class="blog-content">
+          <h3>Manutenção Preventiva: Economia Garantida</h3>
+          <p>Como a manutenção regular pode prolongar a vida útil do seu veículo...</p>
+          <div class="blog-meta">
+            <span class="blog-date">08 Jan 2025</span>
+            <span class="blog-read-time">6 min de leitura</span>
+          </div>
+          <a href="#" class="blog-link">Ler artigo</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     NEWSLETTER SIGNUP
+     ================================================ -->
+<section class="newsletter-section" style="display: none;" id="newsletter-section">
+  <div class="container">
+    <div class="newsletter-content">
+      <div class="newsletter-text">
+        <h2>Fique por Dentro das Novidades</h2>
+        <p>Receba dicas de segurança, ofertas exclusivas e novidades da Autoprotecta</p>
+      </div>
+      
+      <form class="newsletter-form">
+        <div class="newsletter-input-group">
+          <input type="email" placeholder="Seu melhor email" required>
+          <button type="submit" class="btn-primary">
+            <i class="fas fa-paper-plane"></i>
+            Cadastrar
+          </button>
+        </div>
+        <div class="newsletter-consent">
+          <label class="checkbox-label">
+            <input type="checkbox" required>
+            <span class="checkmark"></span>
+            Concordo em receber comunicações da Autoprotecta
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     MODAL DE COMPARAÇÃO
+     ================================================ -->
+<div class="modal comparison-modal" id="comparisonModal">
+  <div class="modal-overlay">
+    <div class="modal-content large">
+      <div class="modal-header">
+        <h3>Proteção Veicular vs Seguro Tradicional</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="comparison-table">
+          <div class="comparison-header">
+            <div class="comparison-feature">Características</div>
+            <div class="comparison-insurance">Seguro Tradicional</div>
+            <div class="comparison-protection">Proteção Autoprotecta</div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-feature">Preço Médio</div>
+            <div class="comparison-insurance negative">R$ 2.500/ano</div>
+            <div class="comparison-protection positive">R$ 1.680/ano</div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-feature">Franquia</div>
+            <div class="comparison-insurance negative">R$ 1.500 a R$ 3.000</div>
+            <div class="comparison-protection positive">Sem franquia</div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-feature">Tempo de Aprovação</div>
+            <div class="comparison-insurance negative">5 a 15 dias</div>
+            <div class="comparison-protection positive">24 a 48 horas</div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-feature">Atendimento</div>
+            <div class="comparison-insurance negative">Call center</div>
+            <div class="comparison-protection positive">Atendimento humanizado</div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-feature">Cobertura Nacional</div>
+            <div class="comparison-insurance positive">Sim</div>
+            <div class="comparison-protection positive">Sim</div>
+          </div>
+          
+          <div class="comparison-row">
+            <div class="comparison-feature">Guincho 24h</div>
+            <div class="comparison-insurance neutral">Limitado</div>
+            <div class="comparison-protection positive">Ilimitado</div>
+          </div>
+        </div>
+        
+        <div class="comparison-cta">
+          <button class="btn-primary btn-large">
+            <i class="fas fa-calculator"></i>
+            Fazer Minha Cotação
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Estilos adicionais para os novos componentes -->
+<style>
+/* Estatísticas */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.stat-item {
+  background: white;
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-xl);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  border: 2px solid var(--smoky-black);
+}
+
+.stat-icon {
+  width: 70px;
+  height: 70px;
+  background: var(--orioles-orange);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--spacing-lg);
+  font-size: var(--font-size-xl);
+  color: white;
+}
+
+.stat-number {
+  display: block;
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-black);
+  color: var(--orioles-orange);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: var(--font-size-lg);
+  color: var(--smoky-black);
+  font-weight: var(--font-weight-bold);
+}
+
+/* Simulador de economia */
+.simulator-wrapper {
+  background: white;
+  padding: var(--spacing-3xl);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  border: 2px solid var(--smoky-black);
+}
+
+.simulator-content {
+  text-align: center;
+}
+
+.simulator-content h2 {
+  margin-bottom: var(--spacing-md);
+}
+
+input[type="range"] {
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+  margin: var(--spacing-md) 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--orioles-orange);
+  cursor: pointer;
+}
+
+.range-value {
+  display: block;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--orioles-orange);
+  margin-bottom: var(--spacing-xl);
+}
+
+.comparison-results {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+}
+
+.result-item {
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  position: relative;
+}
+
+.result-item.insurance {
+  background: #fee;
+  border: 2px solid #fca5a5;
+}
+
+.result-item.protection {
+  background: #f0fdf4;
+  border: 2px solid #86efac;
+}
+
+.result-price {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-black);
+  margin: var(--spacing-md) 0;
+}
+
+.savings-badge {
+  background: var(--orioles-orange);
+  color: white;
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-weight: var(--font-weight-bold);
+  display: inline-block;
+  margin-bottom: var(--spacing-md);
+}
+
+.result-features {
+  list-style: none;
+  text-align: left;
+}
+
+.result-features li {
+  padding: var(--spacing-xs) 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Blog */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.blog-card {
+  background: white;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-normal);
+  border: 2px solid var(--smoky-black);
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.blog-image {
+  position: relative;
+  height: 200px;
+  background: linear-gradient(135deg, var(--orioles-orange), #e53e13);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-category {
+  position: absolute;
+  top: var(--spacing-md);
+  left: var(--spacing-md);
+  background: rgba(255,255,255,0.9);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+}
+
+.placeholder-image {
+  font-size: var(--font-size-4xl);
+  color: white;
+  opacity: 0.7;
+}
+
+.blog-content {
+  padding: var(--spacing-lg);
+}
+
+.blog-content h3 {
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-lg);
+}
+
+.blog-meta {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--spacing-md) 0;
+  font-size: var(--font-size-sm);
+  color: #666;
+}
+
+.blog-link {
+  color: var(--orioles-orange);
+  text-decoration: none;
+  font-weight: var(--font-weight-bold);
+}
+
+.blog-link:hover {
+  text-decoration: underline;
+}
+
+/* Newsletter */
+.newsletter-section {
+  background: var(--smoky-black);
+  color: white;
+  padding: var(--spacing-3xl) 0;
+}
+
+.newsletter-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletter-content h2 {
+  color: white;
+  margin-bottom: var(--spacing-md);
+}
+
+.newsletter-input-group {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.newsletter-input-group input {
+  flex: 1;
+  padding: var(--spacing-md);
+  border: none;
+  border-radius: var(--radius-md);
+}
+
+.newsletter-consent {
+  font-size: var(--font-size-sm);
+}
+
+/* Tabela de comparação */
+.comparison-table {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1px;
+  background: #ddd;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.comparison-header {
+  display: contents;
+}
+
+.comparison-header > div {
+  background: var(--smoky-black);
+  color: white;
+  padding: var(--spacing-lg);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+}
+
+.comparison-row {
+  display: contents;
+}
+
+.comparison-row > div {
+  background: white;
+  padding: var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.comparison-feature {
+  justify-content: flex-start !important;
+  text-align: left !important;
+  font-weight: var(--font-weight-bold);
+}
+
+.positive {
+  color: #059669;
+  font-weight: var(--font-weight-bold);
+}
+
+.negative {
+  color: #dc2626;
+}
+
+.neutral {
+  color: #6b7280;
+}
+
+.comparison-cta {
+  text-align: center;
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid #eee;
+}
+
+/* Responsividade adicional */
+@media (max-width: 768px) {
+  .comparison-results {
+    grid-template-columns: 1fr;
+  }
+  
+  .newsletter-input-group {
+    flex-direction: column;
+  }
+  
+  .comparison-table {
+    grid-template-columns: 1fr;
+  }
+  
+  .comparison-header > div:not(:first-child),
+  .comparison-row > div:not(:first-child) {
+    display: none;
+  }
+  
+  .comparison-feature::after {
+    content: attr(data-mobile);
+    display: block;
+    font-size: var(--font-size-sm);
+    color: #666;
+    font-weight: normal;
+  }
+}
+</style>
+
+<!-- JavaScript adicional para os novos componentes -->
+<script>
+// Animação de contadores
+function animateCounters() {
+  const counters = document.querySelectorAll('.stat-number[data-count]');
+  
+  counters.forEach(counter => {
+    const target = parseInt(counter.getAttribute('data-count'));
+    const duration = 2000;
+    const increment = target / (duration / 16);
+    let current = 0;
+    
+    const timer = setInterval(() => {
+      current += increment;
+      if (current >= target) {
+        counter.textContent = target.toLocaleString();
+        clearInterval(timer);
+      } else {
+        counter.textContent = Math.floor(current).toLocaleString();
+      }
+    }, 16);
+  });
+}
+
+// Simulador de economia
+function initSavingsSimulator() {
+  const slider = document.getElementById('vehicleValueRange');
+  const valueDisplay = document.getElementById('vehicleValueDisplay');
+  const insurancePrice = document.getElementById('insurancePrice');
+  const protectionPrice = document.getElementById('protectionPrice');
+  const savingsAmount = document.getElementById('savingsAmount');
+  
+  if (slider) {
+    slider.addEventListener('input', (e) => {
+      const value = parseInt(e.target.value);
+      const insurance = Math.floor(value * 0.057); // 5.7% do valor
+      const protection = Math.floor(value * 0.0336); // 3.36% do valor
+      const savings = insurance - protection;
+      
+      valueDisplay.textContent = `R$ ${value.toLocaleString()}`;
+      insurancePrice.textContent = `R$ ${insurance.toLocaleString()}/ano`;
+      protectionPrice.textContent = `R$ ${protection.toLocaleString()}/ano`;
+      savingsAmount.textContent = `Economia de R$ ${savings.toLocaleString()}`;
+    });
+    
+    // Trigger inicial
+    slider.dispatchEvent(new Event('input'));
+  }
+}
+
+// Newsletter
+function initNewsletter() {
+  const form = document.querySelector('.newsletter-form');
+  
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      AutoprotectaFeatures.showNotification('Cadastro realizado com sucesso!', 'success');
+      form.reset();
+    });
+  }
+}
+
+// Inicializar quando intersectar com viewport
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && entry.target.id === 'stats-section') {
+      animateCounters();
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+// Observar seção de estatísticas
+const statsSection = document.getElementById('stats-section');
+if (statsSection) {
+  observer.observe(statsSection);
+}
+
+// Inicializar componentes
+document.addEventListener('DOMContentLoaded', () => {
+  initSavingsSimulator();
+  initNewsletter();
+});
+</script>}"]`).classList.remove('active');
+        currentStep++;
+        document.querySelector(`.step[data-step="${currentStep}"]`).classList.add('active');
+        
+        updateNavigationButtons();
+      }
+    });
+  });
+  
+  document.querySelectorAll('.step-prev').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (currentStep > 1) {
+        document.querySelector(`.step[data-step="${currentStep}"]`).classList.remove('active');
+        currentStep--;
+        document.querySelector(`.step[data-step="${currentStep}

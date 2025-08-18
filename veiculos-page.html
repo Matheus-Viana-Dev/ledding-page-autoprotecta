@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veículos - Autoprotecta</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Satoshi:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Material Design Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="brand-logo">
+                <a href="index.html">
+                    <img src="logo-autoprotecta.png" alt="Autoprotecta" class="logo-image">
+                </a>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="protecao-page.html"><i class="fas fa-shield-alt"></i> Proteção</a></li>
+                    <li><a href="veiculos-page.html" class="active"><i class="fas fa-car"></i> Veículos</a></li>
+                    <li><a href="suporte-page.html"><i class="fas fa-headset"></i> Suporte</a></li>
+                    <li><a href="conta-page.html"><i class="fas fa-user"></i> Conta</a></li>
+                </ul>
+            </nav>
+            
+            <a href="contato-page.html" class="btn-primary">
+                <i class="fas fa-phone"></i>
+                Contato
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <h1>Proteção para Todos os Veículos</h1>
+                    <p>Carros, motos, caminhões e frotas empresariais. Temos a proteção ideal para cada tipo de veículo.</p>
+                    <nav class="breadcrumb">
+                        <a href="index.html">Home</a> > <span>Veículos</span>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vehicle Types -->
+        <section class="vehicle-types">
+            <div class="container">
+                <h2 class="section-title">Tipos de Veículos</h2>
+                
+                <div class="vehicle-grid">
+                    <!-- Carros -->
+                    <div class="vehicle-card">
+                        <div class="vehicle-image">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="vehicle-content">
+                            <h3>Automóveis</h3>
+                            <p>Proteção completa para carros de passeio, utilitários e SUVs de todas as marcas e modelos.</p>
+                            <ul class="vehicle-features">
+                                <li><i class="fas fa-check"></i> Carros populares</li>
+                                <li><i class="fas fa-check"></i> Veículos de luxo</li>
+                                <li><i class="fas fa-check"></i> SUVs e Crossovers</li>
+                                <li><i class="fas fa-check"></i> Utilitários</li>
+                            </ul>
+                            <div class="price-range">
+                                <span>A partir de R$ 89/mês</span>
+                            </div>
+                            <button class="btn-primary">
+                                <i class="fas fa-calculator"></i>
+                                Calcular Preço
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Motos -->
+                    <div class="vehicle-card">
+                        <div class="vehicle-image">
+                            <i class="fas fa-motorcycle"></i>
+                        </div>
+                        <div class="vehicle-content">
+                            <h3>Motocicletas</h3>
+                            <p>Proteção especializada para motos com cobertura adaptada às necessidades dos motociclistas.</p>
+                            <ul class="vehicle-features">
+                                <li><i class="fas fa-check"></i> Motos urbanas</li>
+                                <li><i class="fas fa-check"></i> Motos esportivas</li>
+                                <li><i class="fas fa-check"></i> Scooters</li>
+                                <li><i class="fas fa-check"></i> Motos de trabalho</li>
+                            </ul>
+                            <div class="price-range">
+                                <span>A partir de R$ 49/mês</span>
+                            </div>
+                            <button class="btn-primary">
+                                <i class="fas fa-calculator"></i>
+                                Calcular Preço
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Caminhões -->
+                    <div class="vehicle-card">
+                        <div class="vehicle-image">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="vehicle-content">
+                            <h3>Caminhões</h3>
+                            <p>Soluções robustas para veículos de carga com atendimento especializado 24h em todo o Brasil.</p>
+                            <ul class="vehicle-features">
+                                <li><i class="fas fa-check"></i> Caminhões leves</li>
+                                <li><i class="fas fa-check"></i> Caminhões pesados</li>
+                                <li><i class="fas fa-check"></i> Implementos</li>
+                                <li><i class="fas fa-check"></i> Máquinas agrícolas</li>
+                            </ul>
+                            <div class="price-range">
+                                <span>Consulte condições</span>
+                            </div>
+                            <button class="btn-primary">
+                                <i class="fas fa-phone"></i>
+                                Falar com Especialista
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Frota -->
+                    <div class="vehicle-card featured">
+                        <div class="vehicle-badge">Empresarial</div>
+                        <div class="vehicle-image">
+                            <i class="fas fa-bus"></i>
+                        </div>
+                        <div class="vehicle-content">
+                            <h3>Frotas Empresariais</h3>
+                            <p>Gestão centralizada para empresas com múltiplos veículos e relatórios detalhados.</p>
+                            <ul class="vehicle-features">
+                                <li><i class="fas fa-check"></i> Gestão centralizada</li>
+                                <li><i class="fas fa-check"></i> Relatórios detalhados</li>
+                                <li><i class="fas fa-check"></i> Atendimento dedicado</li>
+                                <li><i class="fas fa-check"></i> Desconto progressivo</li>
+                            </ul>
+                            <div class="price-range">
+                                <span>Desconto até 30%</span>
+                            </div>
+                            <button class="btn-primary">
+                                <i class="fas fa-handshake"></i>
+                                Solicitar Proposta
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Supported Brands -->
+        <section class="supported-brands">
+            <div class="container">
+                <h2 class="section-title">Marcas Aceitas</h2>
+                <p class="section-subtitle">Trabalhamos com todas as principais marcas do mercado</p>
+                
+                <div class="brands-grid">
+                    <div class="brand-category">
+                        <h3>Automóveis</h3>
+                        <div class="brands-list">
+                            <span class="brand-item">Volkswagen</span>
+                            <span class="brand-item">Chevrolet</span>
+                            <span class="brand-item">Ford</span>
+                            <span class="brand-item">Fiat</span>
+                            <span class="brand-item">Toyota</span>
+                            <span class="brand-item">Honda</span>
+                            <span class="brand-item">Hyundai</span>
+                            <span class="brand-item">Nissan</span>
+                            <span class="brand-item">Renault</span>
+                            <span class="brand-item">Peugeot</span>
+                            <span class="brand-item">BMW</span>
+                            <span class="brand-item">Mercedes-Benz</span>
+                        </div>
+                    </div>
+                    
+                    <div class="brand-category">
+                        <h3>Motocicletas</h3>
+                        <div class="brands-list">
+                            <span class="brand-item">Honda</span>
+                            <span class="brand-item">Yamaha</span>
+                            <span class="brand-item">Kawasaki</span>
+                            <span class="brand-item">Suzuki</span>
+                            <span class="brand-item">Harley-Davidson</span>
+                            <span class="brand-item">BMW</span>
+                            <span class="brand-item">Ducati</span>
+                            <span class="brand-item">Triumph</span>
+                        </div>
+                    </div>
+                    
+                    <div class="brand-category">
+                        <h3>Caminhões</h3>
+                        <div class="brands-list">
+                            <span class="brand-item">Mercedes-Benz</span>
+                            <span class="brand-item">Volvo</span>
+                            <span class="brand-item">Scania</span>
+                            <span class="brand-item">MAN</span>
+                            <span class="brand-item">Iveco</span>
+                            <span class="brand-item">Ford Cargo</span>
+                            <span class="brand-item">Volkswagen</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vehicle Requirements -->
+        <section class="vehicle-requirements">
+            <div class="container">
+                <h2 class="section-title">Requisitos para Adesão</h2>
+                
+                <div class="requirements-grid">
+                    <div class="requirement-card">
+                        <div class="requirement-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3>Valor do Veículo</h3>
+                        <p>Valor mínimo de R$ 15.000 para carros, R$ 5.000 para motos e R$ 30.000 para caminhões.</p>
+                    </div>
+                    
+                    <div class="requirement-card">
+                        <div class="requirement-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Documentação</h3>
+                        <p>Veículo deve estar com documentação em dia, sem pendências ou restrições financeiras.</p>
+                    </div>
+                    
+                    <div class="requirement-card">
+                        <div class="requirement-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Vistoria</h3>
+                        <p>Vistoria obrigatória para aprovação, realizada gratuitamente em local de sua escolha.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculator Section -->
+        <section class="vehicle-calculator">
+            <div class="container">
+                <div class="calculator-wrapper">
+                    <h2 class="section-title">Calcule o Valor da sua Proteção</h2>
+                    <form class="vehicle-quote-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="vehicleType">Tipo de Veículo</label>
+                                <select name="vehicleType" id="vehicleType" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="car">Automóvel</option>
+                                    <option value="motorcycle">Motocicleta</option>
+                                    <option value="truck">Caminhão</option>
+                                    <option value="fleet">Frota Empresarial</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="vehicleBrand">Marca</label>
+                                <select name="vehicleBrand" id="vehicleBrand" required>
+                                    <option value="">Selecione o tipo primeiro</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="vehicleModel">Modelo</label>
+                                <input type="text" name="vehicleModel" id="vehicleModel" placeholder="Ex: Civic, Gol, CB 600F" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="vehicleYear">Ano</label>
+                                <select name="vehicleYear" id="vehicleYear" required>
+                                    <option value="">Selecione...</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="vehicleValue">Valor do Veículo</label>
+                                <input type="text" name="vehicleValue" id="vehicleValue" placeholder="R$ 0,00" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="zipCode">CEP</label>
+                                <input type="text" name="zipCode" id="zipCode" placeholder="00000-000" maxlength="9" required>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary btn-large">
+                            <i class="fas fa-calculator"></i>
+                            Calcular Proteção
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Proteja seu Veículo Hoje Mesmo</h2>
+                    <p>Não importa qual seja seu veículo, temos a proteção ideal para você.</p>
+                    <div class="cta-actions">
+                        <button class="btn-primary btn-large">
+                            <i class="fas fa-shield-alt"></i>
+                            Contratar Proteção
+                        </button>
+                        <div class="contact-info">
+                            <span><i class="fas fa-phone"></i> 0800 123 4567</span>
+                            <span><i class="fas fa-whatsapp"></i> WhatsApp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-logo-footer">
+                        <img src="logo-autoprotecta.png" alt="Autoprotecta" class="logo-image-footer">
+                    </div>
+                    <p>Proteção veicular que inspira confiança, robustez e inovação.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Serviços</h4>
+                        <ul>
+                            <li><a href="protecao-page.html"><i class="fas fa-car"></i> Proteção Veicular</a></li>
+                            <li><a href="veiculos-page.html"><i class="fas fa-motorcycle"></i> Proteção Moto</a></li>
+                            <li><a href="#"><i class="fas fa-truck"></i> Frota Empresarial</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Suporte</h4>
+                        <ul>
+                            <li><a href="suporte-page.html"><i class="fas fa-headset"></i> Atendimento</a></li>
+                            <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                            <li><a href="#"><i class="fas fa-file-contract"></i> Contratos</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><i class="fas fa-phone"></i> 0800 123 4567</li>
+                            <li><i class="fas fa-envelope"></i> contato@autoprotecta.com.br</li>
+                            <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Autoprotecta. Todos os direitos reservados.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    
+    <script>
+        // Preencher anos dinamicamente
+        document.addEventListener('DOMContentLoaded', function() {
+            const yearSelect = document.getElementById('vehicleYear');
+            const currentYear = new Date().getFullYear();
+            
+            for (let year = currentYear; year >= 2005; year--) {
+                const option = document.createElement('option');
+                option.value = year;
+                option.textContent = year;
+                yearSelect.appendChild(option);
+            }
+            
+            // Máscara para valor do veículo
+            const valueInput = document.getElementById('vehicleValue');
+            valueInput.addEventListener('input', function(e) {
+                let value = e.target.value.replace(/\D/g, '');
+                value = (value / 100).toLocaleString('pt-BR', {
+                    style: 'currency',
+                    currency: 'BRL'
+                });
+                e.target.value = value;
+            });
+            
+            // Atualizar marcas baseado no tipo de veículo
+            const vehicleTypeSelect = document.getElementById('vehicleType');
+            const brandSelect = document.getElementById('vehicleBrand');
+            
+            const brands = {
+                car: ['Volkswagen', 'Chevrolet', 'Ford', 'Fiat', 'Toyota', 'Honda', 'Hyundai', 'Nissan'],
+                motorcycle: ['Honda', 'Yamaha', 'Kawasaki', 'Suzuki', 'Harley-Davidson', 'BMW'],
+                truck: ['Mercedes-Benz', 'Volvo', 'Scania', 'MAN', 'Iveco', 'Ford Cargo'],
+                fleet: ['Todas as marcas aceitas']
+            };
+            
+            vehicleTypeSelect.addEventListener('change', function() {
+                const selectedType = this.value;
+                brandSelect.innerHTML = '<option value="">Selecione...</option>';
+                
+                if (selectedType && brands[selectedType]) {
+                    brands[selectedType].forEach(brand => {
+                        const option = document.createElement('option');
+                        option.value = brand.toLowerCase();
+                        option.textContent = brand;
+                        brandSelect.appendChild(option);
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <h3>Ano do Veículo</h3>
+                        <p>Aceitamos veículos a partir do ano 2010 para carros e motos, e 2005 para caminhões.</p>
+                    </div>
+                    
+                    <div class="requirement-card">
+                        <div class="requirement-icon">

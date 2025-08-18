@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte - Autoprotecta</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Satoshi:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Material Design Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="brand-logo">
+                <a href="index.html">
+                    <img src="logo-autoprotecta.png" alt="Autoprotecta" class="logo-image">
+                </a>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="protecao-page.html"><i class="fas fa-shield-alt"></i> Proteção</a></li>
+                    <li><a href="veiculos-page.html"><i class="fas fa-car"></i> Veículos</a></li>
+                    <li><a href="suporte-page.html" class="active"><i class="fas fa-headset"></i> Suporte</a></li>
+                    <li><a href="conta-page.html"><i class="fas fa-user"></i> Conta</a></li>
+                </ul>
+            </nav>
+            
+            <a href="contato-page.html" class="btn-primary">
+                <i class="fas fa-phone"></i>
+                Contato
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <h1>Central de Suporte</h1>
+                    <p>Estamos aqui para ajudar você 24 horas por dia, 7 dias por semana</p>
+                    <nav class="breadcrumb">
+                        <a href="index.html">Home</a> > <span>Suporte</span>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Support -->
+        <section class="emergency-support">
+            <div class="container">
+                <div class="emergency-card">
+                    <div class="emergency-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="emergency-content">
+                        <h2>Precisa de Socorro Imediato?</h2>
+                        <p>Em caso de sinistro, acione nosso atendimento de emergência</p>
+                        <div class="emergency-buttons">
+                            <a href="tel:08001234567" class="btn-primary btn-large emergency-btn">
+                                <i class="fas fa-phone"></i>
+                                0800 123 4567
+                            </a>
+                            <a href="https://wa.me/5511999999999" class="btn-secondary btn-large emergency-btn">
+                                <i class="fab fa-whatsapp"></i>
+                                WhatsApp 24h
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Options -->
+        <section class="support-options">
+            <div class="container">
+                <h2 class="section-title">Como Podemos Ajudar?</h2>
+                
+                <div class="support-grid">
+                    <div class="support-card">
+                        <div class="support-icon">
+                            <i class="fas fa-car-crash"></i>
+                        </div>
+                        <h3>Acionar Sinistro</h3>
+                        <p>Precisa acionar sua proteção por roubo, furto, colisão ou outros sinistros?</p>
+                        <button class="btn-primary support-btn" data-action="sinistro">
+                            <i class="fas fa-play"></i>
+                            Acionar Agora
+                        </button>
+                    </div>
+                    
+                    <div class="support-card">
+                        <div class="support-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3>Solicitar Guincho</h3>
+                        <p>Seu veículo quebrou ou precisa de guincho? Solicitamos para você.</p>
+                        <button class="btn-primary support-btn" data-action="guincho">
+                            <i class="fas fa-play"></i>
+                            Solicitar Guincho
+                        </button>
+                    </div>
+                    
+                    <div class="support-card">
+                        <div class="support-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Socorro Mecânico</h3>
+                        <p>Problemas mecânicos? Nossa equipe pode resolver no local.</p>
+                        <button class="btn-primary support-btn" data-action="mecanico">
+                            <i class="fas fa-play"></i>
+                            Chamar Mecânico
+                        </button>
+                    </div>
+                    
+                    <div class="support-card">
+                        <div class="support-icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <h3>Chaveiro 24h</h3>
+                        <p>Perdeu as chaves ou travou dentro do carro? Temos chaveiro 24h.</p>
+                        <button class="btn-primary support-btn" data-action="chaveiro">
+                            <i class="fas fa-play"></i>
+                            Chamar Chaveiro
+                        </button>
+                    </div>
+                    
+                    <div class="support-card">
+                        <div class="support-icon">
+                            <i class="fas fa-car-side"></i>
+                        </div>
+                        <h3>Carro Reserva</h3>
+                        <p>Solicite um carro reserva enquanto o seu está sendo reparado.</p>
+                        <button class="btn-primary support-btn" data-action="reserva">
+                            <i class="fas fa-play"></i>
+                            Solicitar Carro
+                        </button>
+                    </div>
+                    
+                    <div class="support-card">
+                        <div class="support-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h3>Dúvidas Gerais</h3>
+                        <p>Tem dúvidas sobre seu plano, cobertura ou outros assuntos?</p>
+                        <button class="btn-primary support-btn" data-action="duvidas">
+                            <i class="fas fa-play"></i>
+                            Tirar Dúvidas
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Perguntas Frequentes</h2>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Como acionar minha proteção em caso de sinistro?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Você pode acionar sua proteção ligando para 0800 123 4567, pelo WhatsApp ou através do nosso aplicativo. Nossa central funciona 24h por dia, 7 dias por semana. Tenha em mãos seu CPF e placa do veículo.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Quanto tempo demora para o guincho chegar?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Em grandes centros urbanos, o tempo médio é de 45 minutos. Em cidades menores, pode levar até 2 horas. Nosso sistema localiza automaticamente o guincho mais próximo de você.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Posso escolher a oficina para reparar meu veículo?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sim! Você pode escolher uma oficina da nossa rede credenciada ou indicar uma de sua preferência. Nossa rede possui mais de 5.000 oficinas em todo o Brasil.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Como solicitar um carro reserva?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>O carro reserva é solicitado automaticamente quando seu veículo vai para reparo. Disponibilizamos o veículo em até 24h após a autorização do reparo, conforme disponibilidade da sua região.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>A proteção funciona em todo o Brasil?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sim! Nossa cobertura é nacional. Nossos serviços estão disponíveis 24h em todos os estados brasileiros, incluindo atendimento de guincho, socorro mecânico e chaveiro.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Como acompanhar o andamento do meu sinistro?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Você pode acompanhar pelo nosso aplicativo, site ou ligando para nossa central. Fornecemos atualizações constantes sobre o status do reparo e previsão de entrega.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Methods -->
+        <section class="contact-methods">
+            <div class="container">
+                <h2 class="section-title">Outras Formas de Contato</h2>
+                
+                <div class="contact-grid">
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Central Telefônica</h3>
+                        <p><strong>0800 123 4567</strong></p>
+                        <p>Atendimento 24h para emergências</p>
+                        <p>Segunda a sexta: 8h às 18h para dúvidas gerais</p>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p><strong>(11) 99999-9999</strong></p>
+                        <p>Chat direto com nossos especialistas</p>
+                        <p>Disponível 24h para emergências</p>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p><strong>suporte@autoprotecta.com.br</strong></p>
+                        <p>Para dúvidas não urgentes</p>
+                        <p>Resposta em até 4 horas úteis</p>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Aplicativo</h3>
+                        <p><strong>Autoprotecta App</strong></p>
+                        <p>Disponível para iOS e Android</p>
+                        <p>Acione serviços com um toque</p>
+                        <div class="app-buttons">
+                            <button class="btn-outline">
+                                <i class="fab fa-apple"></i>
+                                App Store
+                            </button>
+                            <button class="btn-outline">
+                                <i class="fab fa-google-play"></i>
+                                Google Play
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Status -->
+        <section class="service-status">
+            <div class="container">
+                <h2 class="section-title">Status dos Serviços</h2>
+                
+                <div class="status-grid">
+                    <div class="status-item">
+                        <div class="status-indicator online"></div>
+                        <h4>Central de Atendimento</h4>
+                        <span class="status-text">Operacional</span>
+                    </div>
+                    
+                    <div class="status-item">
+                        <div class="status-indicator online"></div>
+                        <h4>Guincho 24h</h4>
+                        <span class="status-text">Operacional</span>
+                    </div>
+                    
+                    <div class="status-item">
+                        <div class="status-indicator online"></div>
+                        <h4>Socorro Mecânico</h4>
+                        <span class="status-text">Operacional</span>
+                    </div>
+                    
+                    <div class="status-item">
+                        <div class="status-indicator online"></div>
+                        <h4>Aplicativo Mobile</h4>
+                        <span class="status-text">Operacional</span>
+                    </div>
+                </div>
+                
+                <p class="status-note">
+                    <i class="fas fa-info-circle"></i>
+                    Última atualização: Hoje às 14:30
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-logo-footer">
+                        <img src="logo-autoprotecta.png" alt="Autoprotecta" class="logo-image-footer">
+                    </div>
+                    <p>Proteção veicular que inspira confiança, robustez e inovação.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Serviços</h4>
+                        <ul>
+                            <li><a href="protecao-page.html"><i class="fas fa-car"></i> Proteção Veicular</a></li>
+                            <li><a href="veiculos-page.html"><i class="fas fa-motorcycle"></i> Proteção Moto</a></li>
+                            <li><a href="#"><i class="fas fa-truck"></i> Frota Empresarial</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Suporte</h4>
+                        <ul>
+                            <li><a href="suporte-page.html"><i class="fas fa-headset"></i> Atendimento</a></li>
+                            <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                            <li><a href="#"><i class="fas fa-file-contract"></i> Contratos</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><i class="fas fa-phone"></i> 0800 123 4567</li>
+                            <li><i class="fas fa-envelope"></i> contato@autoprotecta.com.br</li>
+                            <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Autoprotecta. Todos os direitos reservados.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    
+    <script>
+        // FAQ functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    
+                    // Close all FAQ items
+                    faqItems.forEach(faq => faq.classList.remove('active'));
+                    
+                    // Open clicked item if it wasn't active
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+            
+            // Support buttons functionality
+            const supportButtons = document.querySelectorAll('.support-btn');
+            supportButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const action = this.getAttribute('data-action');
+                    
+                    // Simulate service activation
+                    this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Conectando...';
+                    this.disabled = true;
+                    
+                    setTimeout(() => {
+                        alert(`Serviço de ${action} acionado! Você será contatado em instantes.`);
+                        this.innerHTML = '<i class="fas fa-check"></i> Acionado';
+                        
+                        setTimeout(() => {
+                            this.innerHTML = '<i class="fas fa-play"></i> Acionar Novamente';
+                            this.disabled = false;
+                        }, 3000);
+                    }, 2000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
