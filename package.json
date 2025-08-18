@@ -1,0 +1,46 @@
+{
+  "name": "autoprotecta-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page profissional para a Autoprotecta - Sistema de proteção veicular",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --open=/index.html",
+    "build": "echo 'Build completed - static site ready'",
+    "lint:css": "stylelint assets/css/*.css",
+    "lint:js": "eslint assets/js/*.js",
+    "format": "prettier --write .",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "autoprotecta",
+    "proteção-veicular",
+    "landing-page",
+    "html5",
+    "css3",
+    "javascript",
+    "responsive",
+    "design-system"
+  ],
+  "author": "Autoprotecta Team",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "prettier": "^3.0.0",
+    "stylelint": "^15.0.0",
+    "eslint": "^8.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/autoprotecta/landing-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/autoprotecta/landing-page/issues"
+  },
+  "homepage": "https://autoprotecta.com.br"
+}
