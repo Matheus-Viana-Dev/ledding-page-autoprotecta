@@ -2,6 +2,17 @@
 let currentStep = 1;
 const totalSteps = 3;
 
+
+
+
+
+
+
+
+
+
+
+
 // Função para navegar para o próximo passo
 function nextStep() {
     if (currentStep < totalSteps) {
@@ -110,23 +121,19 @@ function validateCurrentStep() {
 
 // Função para atualizar a barra de progresso
 function updateProgressBar() {
-    const progressFill = document.querySelector(`#step${currentStep} .progress-fill`);
-    const progressText = document.querySelector(`#step${currentStep} .progress-text`);
+    // Atualizar todas as barras de progresso
+    for (let i = 1; i <= totalSteps; i++) {
+        const progressFill = document.querySelector(`#step${i} .progress-fill`);
+        if (progressFill) {
+            const progress = (i / totalSteps) * 100;
+            progressFill.style.width = `${progress}%`;
+        }
+    }
     
-    if (progressFill && progressText) {
-        const progress = (currentStep / totalSteps) * 100;
-        
-        // Animar a barra de progresso
-        progressFill.style.width = `${progress}%`;
-        
-        // Atualizar texto
+    // Atualizar texto de progresso
+    const progressText = document.querySelector(`#step${currentStep} .progress-text`);
+    if (progressText) {
         progressText.textContent = `Passo ${currentStep} de ${totalSteps}`;
-        
-        // Adicionar efeito de brilho
-        progressFill.style.animation = 'none';
-        setTimeout(() => {
-            progressFill.style.animation = 'shimmer 2s infinite';
-        }, 100);
     }
 }
 
@@ -348,6 +355,9 @@ function highlightActiveNavLink() {
 
 // Adicionar listeners de eventos quando o DOM estiver carregado
 document.addEventListener('DOMContentLoaded', function() {
+    // Carregar página salva
+    loadSavedPage();
+    
     // Inicializar formulário
     initializeForm();
     
@@ -479,6 +489,20 @@ document.addEventListener('DOMContentLoaded', function() {
         .form-step.active {
             animation: slideInLeft 0.5s ease-out;
         }
+        
+        /* Estilos para notificação de tema */
+        .theme-notification {
+            animation: slideInRight 0.3s ease-out;
+        }
+        
+        @keyframes slideInRight {
+            from {
+                transform: translateX(400px);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
     `;
     document.head.appendChild(style);
     
@@ -557,6 +581,8 @@ document.addEventListener('DOMContentLoaded', function() {
         this.style.transform = 'translateY(0)';
         this.style.boxShadow = '0 4px 15px rgba(251, 69, 22, 0.3)';
     });
+    
+
 });
 
 // Adicionar estilos de erro
