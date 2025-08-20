@@ -13,12 +13,17 @@
     
     <!-- CSS da identidade visual AutoProtecta -->
     <link rel="stylesheet" href="css/autoprotecta-identity.css">
+    <!-- CSS do formulário em etapas -->
+    <link rel="stylesheet" href="css/form-steps.css">
     
     <!-- Font Awesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/logo-autoprotecta-horizontal-preto.png">
+    <link rel="icon" type="image/png" href="images/logo-sem-fundo.png">
+    <link rel="icon" type="image/x-icon" href="images/logo-sem-fundo.png">
+    <link rel="shortcut icon" type="image/png" href="images/logo-sem-fundo.png">
+    <link rel="apple-touch-icon" href="images/logo-sem-fundo.png">
 </head>
 <body>
     <!-- ===== HEADER COMPACTO E HORIZONTAL ===== -->
@@ -28,7 +33,7 @@
                 <!-- Logo AutoProtecta -->
                 <div class="logo-section">
                     <img src="images/logo-autoprotecta-horizontal-preto.png" alt="AutoProtecta" class="logo-img">
-                    <span class="logo-text">AutoProtecta</span>
+
                 </div>
                 
                 <!-- Menu de navegação -->
@@ -115,24 +120,42 @@
                     </div>
                 </div>
                 
-                <!-- Imagem/Ilustração do Hero -->
+                <!-- Ilustração Hero Moderna e Clara -->
                 <div class="relative animate-slide-right">
-                    <div class="bg-gradient-orange-black rounded-2xl p-8 text-center">
-                        <div class="bg-white rounded-full w-32 h-32 mx-auto mb-6 flex items-center justify-center">
-                            <i class="fas fa-car text-6xl text-orange"></i>
-                        </div>
-                        <h3 class="text-white text-2xl mb-4">Proteção Total</h3>
-                        <p class="text-platinum mb-6">
-                            Desde colisões até roubo, sua proteção está garantida
-                        </p>
-                        <div class="grid grid-cols-2 gap-4 text-sm">
-                            <div class="bg-white bg-opacity-10 rounded-lg p-3">
-                                <i class="fas fa-shield-alt text-orange mb-2"></i>
-                                <p class="text-white">Segurança</p>
+                    <div class="hero-illustration">
+                        <!-- Círculo principal com gradiente -->
+                        <div class="hero-main-circle">
+                            <div class="hero-icon-container">
+                                <img src="images/logo-sem-fundo.png" alt="AutoProtecta" class="hero-logo">
                             </div>
-                            <div class="bg-white bg-opacity-10 rounded-lg p-3">
-                                <i class="fas fa-clock text-orange mb-2"></i>
-                                <p class="text-white">24h</p>
+                        </div>
+                        
+                        <!-- Elementos flutuantes de proteção -->
+                        <div class="floating-element protection-element">
+                            <i class="fas fa-car"></i>
+                            <span>Veículo</span>
+                        </div>
+                        
+                        <div class="floating-element security-element">
+                            <i class="fas fa-lock"></i>
+                            <span>Seguro</span>
+                        </div>
+                        
+                        <div class="floating-element support-element">
+                            <i class="fas fa-headset"></i>
+                            <span>Suporte</span>
+                        </div>
+                        
+                        <!-- Linhas de conexão -->
+                        <div class="connection-line line-1"></div>
+                        <div class="connection-line line-2"></div>
+                        <div class="connection-line line-3"></div>
+                        
+                        <!-- Badge de destaque -->
+                        <div class="hero-badge">
+                            <div class="badge-content">
+                                <span class="badge-number">15+</span>
+                                <span class="badge-text">Anos de<br>Experiência</span>
                             </div>
                         </div>
                     </div>
@@ -143,6 +166,11 @@
 
     <!-- ===== SEÇÃO SOBRE - FUNDO PLATINUM ===== -->
     <section class="section-platinum" id="sobre">
+        <!-- Grafismo decorativo do rinoceronte -->
+        <div class="rhino-graphic-top">
+            <div class="rhino-pattern"></div>
+        </div>
+        
         <div class="container">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl mb-6">
@@ -154,53 +182,74 @@
                 </p>
             </div>
             
-            <!-- Grid de benefícios -->
+            <!-- Grid de benefícios modernizado -->
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Benefício 1 -->
-                <div class="card hover-lift text-center">
-                    <div class="card-header">
-                        <div class="bg-orange rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                            <i class="fas fa-shield-alt text-white text-3xl"></i>
+                <!-- Benefício 1: Proteção Robusta -->
+                <div class="modern-benefit-card protection-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="icon-container">
+                            <div class="icon-background">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
                         </div>
-                        <h3 class="text-2xl mb-3">Proteção Robusta</h3>
-                    </div>
-                    <div class="card-body">
-                        <p class="text-muted">
+                        <h3 class="benefit-title">Proteção Robusta</h3>
+                        <p class="benefit-description">
                             Cobertura completa contra roubo, furto, colisões e danos naturais. 
                             Sua proteção começa onde as outras terminam.
                         </p>
+                        <div class="benefit-features">
+                            <span class="feature-tag">Roubo</span>
+                            <span class="feature-tag">Furto</span>
+                            <span class="feature-tag">Colisões</span>
+                            <span class="feature-tag">Danos Naturais</span>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- Benefício 2 -->
-                <div class="card hover-lift text-center">
-                    <div class="card-header">
-                        <div class="bg-orange rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                            <i class="fas fa-headset text-white text-3xl"></i>
+                <!-- Benefício 2: Suporte Premium -->
+                <div class="modern-benefit-card support-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="icon-container">
+                            <div class="icon-background">
+                                <i class="fas fa-headset"></i>
+                            </div>
                         </div>
-                        <h3 class="text-2xl mb-3">Suporte Premium</h3>
-                    </div>
-                    <div class="card-body">
-                        <p class="text-muted">
+                        <h3 class="benefit-title">Suporte Premium</h3>
+                        <p class="benefit-description">
                             Equipe especializada disponível 24/7 para atender suas necessidades. 
                             Resposta em até 5 minutos para emergências.
                         </p>
+                        <div class="benefit-features">
+                            <span class="feature-tag">24/7</span>
+                            <span class="feature-tag">5 Min</span>
+                            <span class="feature-tag">Especializada</span>
+                            <span class="feature-tag">Emergências</span>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- Benefício 3 -->
-                <div class="card hover-lift text-center">
-                    <div class="card-header">
-                        <div class="bg-orange rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                            <i class="fas fa-chart-line text-white text-3xl"></i>
+                <!-- Benefício 3: Preços Competitivos -->
+                <div class="modern-benefit-card pricing-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="icon-container">
+                            <div class="icon-background">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
                         </div>
-                        <h3 class="text-2xl mb-3">Preços Competitivos</h3>
-                    </div>
-                    <div class="card-body">
-                        <p class="text-muted">
+                        <h3 class="benefit-title">Preços Competitivos</h3>
+                        <p class="benefit-description">
                             Planos personalizados a partir de R$ 29/mês. Sem taxas ocultas e 
                             com descontos por pagamento anual.
                         </p>
+                        <div class="benefit-features">
+                            <span class="feature-tag">R$ 29/mês</span>
+                            <span class="feature-tag">Sem Taxas</span>
+                            <span class="feature-tag">Descontos</span>
+                            <span class="feature-tag">Personalizado</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -209,6 +258,11 @@
 
     <!-- ===== SEÇÃO DE ESTATÍSTICAS - FUNDO PRETO ===== -->
     <section class="section-dark" id="estatisticas">
+        <!-- Grafismo decorativo do rinoceronte -->
+        <div class="rhino-graphic-stats">
+            <div class="rhino-pattern-dark"></div>
+        </div>
+        
         <div class="container">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl mb-6">
@@ -219,322 +273,73 @@
                 </p>
             </div>
             
-            <!-- Grid de estatísticas -->
-            <div class="grid md:grid-cols-4 gap-8">
-                <div class="text-center">
-                    <div class="text-5xl md:text-6xl font-black text-orange mb-4">50K+</div>
-                    <div class="text-platinum text-lg">Clientes Protegidos</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-5xl md:text-6xl font-black text-orange mb-4">15+</div>
-                    <div class="text-platinum text-lg">Anos de Experiência</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-5xl md:text-6xl font-black text-orange mb-4">4.9</div>
-                    <div class="text-platinum text-lg">Avaliação Média</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-5xl md:text-6xl font-black text-orange mb-4">24/7</div>
-                    <div class="text-platinum text-lg">Suporte Disponível</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== SEÇÃO DE COTAÇÃO - FORMULÁRIO DE LEADS ===== -->
-    <section class="py-20 bg-platinum-light" id="cotacao">
-        <div class="container">
-            <div class="grid md:grid-cols-2 gap-12 items-start">
-                <!-- Informações da cotação -->
-                <div>
-                    <h2 class="text-4xl md:text-5xl mb-6">
-                        Solicite sua <span class="text-orange">cotação personalizada</span>
-                    </h2>
-                    <p class="text-xl text-muted mb-8">
-                        Nossa equipe especializada analisará seu perfil e criará um plano de proteção 
-                        sob medida para suas necessidades específicas.
-                    </p>
-                    
-                    <!-- Benefícios da cotação -->
-                    <div class="space-y-4 mb-8">
-                        <div class="flex items-center gap-3">
-                            <div class="bg-orange rounded-full w-6 h-6 flex items-center justify-center">
-                                <i class="fas fa-check text-white text-sm"></i>
-                            </div>
-                            <span class="text-lg">Cotação gratuita e sem compromisso</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <div class="bg-orange rounded-full w-6 h-6 flex items-center justify-center">
-                                <i class="fas fa-check text-white text-sm"></i>
-                            </div>
-                            <span class="text-lg">Resposta em até 2 horas úteis</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <div class="bg-orange rounded-full w-6 h-6 flex items-center justify-center">
-                                <i class="fas fa-check text-white text-sm"></i>
-                            </div>
-                            <span class="text-lg">Planos personalizados para seu perfil</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <div class="bg-orange rounded-full w-6 h-6 flex items-center justify-center">
-                                <i class="fas fa-check text-white text-sm"></i>
-                            </div>
-                            <span class="text-lg">Suporte especializado durante todo o processo</span>
-                        </div>
+            <!-- Grid de estatísticas modernizado -->
+            <div class="stats-grid">
+                <!-- Estatística 1: Clientes Protegidos -->
+                <div class="stat-card clients-stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
                     </div>
-                    
-                    <!-- Destaque de segurança -->
-                    <div class="bg-gradient-orange-black rounded-xl p-6 text-white">
-                        <div class="flex items-center gap-3 mb-3">
-                            <i class="fas fa-shield-alt text-2xl"></i>
-                            <h4 class="text-xl font-bold">100% Seguro</h4>
-                        </div>
-                        <p class="text-platinum">
-                            Seus dados estão protegidos com a mais alta tecnologia de segurança. 
-                            Sua privacidade é nossa prioridade.
-                        </p>
+                    <div class="stat-number-container">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-suffix">K+</div>
                     </div>
+                    <div class="stat-label">Clientes Protegidos</div>
+                    <div class="stat-description">Famílias que confiam na AutoProtecta</div>
                 </div>
                 
-                <!-- Formulário de cotação -->
-                <div class="card">
-                    <div class="card-header text-center">
-                        <h3 class="text-2xl mb-2">Formulário de Cotação</h3>
-                        <p class="text-muted">Preencha os dados abaixo para receber sua proposta personalizada</p>
+                <!-- Estatística 2: Anos de Experiência -->
+                <div class="stat-card experience-stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
                     </div>
-                    
-                    <div class="card-body">
-                        <form id="cotacaoForm" class="space-y-6">
-                            <!-- Dados pessoais -->
-                            <div class="form-group">
-                                <label for="nome" class="form-label">Nome Completo *</label>
-                                <input type="text" id="nome" name="nome" class="form-input" placeholder="Digite seu nome completo" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email" class="form-label">E-mail *</label>
-                                <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="telefone" class="form-label">Telefone/WhatsApp *</label>
-                                <input type="tel" id="telefone" name="telefone" class="form-input" placeholder="(11) 99999-9999" required>
-                            </div>
-                            
-                            <!-- Dados do veículo -->
-                            <div class="form-group">
-                                <label for="tipoVeiculo" class="form-label">Tipo de Veículo *</label>
-                                <select id="tipoVeiculo" name="tipoVeiculo" class="form-select" required>
-                                    <option value="">Selecione o tipo</option>
-                                    <option value="carro">Carro</option>
-                                    <option value="moto">Moto</option>
-                                    <option value="caminhao">Caminhão</option>
-                                    <option value="van">Van/Utilitário</option>
-                                    <option value="outros">Outros</option>
-                                </select>
-                            </div>
-                            
-                            <div class="grid md:grid-cols-2 gap-4">
-                                <div class="form-group">
-                                    <label for="marca" class="form-label">Marca *</label>
-                                    <select id="marca" name="marca" class="form-select" required>
-                                        <option value="">Selecione</option>
-                                        <option value="chevrolet">Chevrolet</option>
-                                        <option value="ford">Ford</option>
-                                        <option value="volkswagen">Volkswagen</option>
-                                        <option value="fiat">Fiat</option>
-                                        <option value="honda">Honda</option>
-                                        <option value="toyota">Toyota</option>
-                                        <option value="hyundai">Hyundai</option>
-                                        <option value="outros">Outros</option>
-                                    </select>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="ano" class="form-label">Ano *</label>
-                                    <select id="ano" name="ano" class="form-select" required>
-                                        <option value="">Selecione</option>
-                                        <option value="2024">2024</option>
-                                        <option value="2023">2023</option>
-                                        <option value="2022">2022</option>
-                                        <option value="2021">2021</option>
-                                        <option value="2020">2020</option>
-                                        <option value="2019">2019</option>
-                                        <option value="2018">2018</option>
-                                        <option value="2017">2017</option>
-                                        <option value="2016">2016</option>
-                                        <option value="2015">2015</option>
-                                        <option value="2014">2014</option>
-                                        <option value="2013">2013</option>
-                                        <option value="2012">2012</option>
-                                        <option value="2011">2011</option>
-                                        <option value="2010">2010</option>
-                                        <option value="2009">2009</option>
-                                        <option value="2008">2008</option>
-                                        <option value="2007">2007</option>
-                                        <option value="2006">2006</option>
-                                        <option value="2005">2005</option>
-                                        <option value="2004">2004</option>
-                                        <option value="2003">2003</option>
-                                        <option value="2002">2002</option>
-                                        <option value="2001">2001</option>
-                                        <option value="2000">2000</option>
-                                        <option value="1999">1999</option>
-                                        <option value="1998">1998</option>
-                                        <option value="1997">1997</option>
-                                        <option value="1996">1996</option>
-                                        <option value="1995">1995</option>
-                                        <option value="1994">1994</option>
-                                        <option value="1993">1993</option>
-                                        <option value="1992">1992</option>
-                                        <option value="1991">1991</option>
-                                        <option value="1990">1990</option>
-                                        <option value="1989">1989</option>
-                                        <option value="1988">1988</option>
-                                        <option value="1987">1987</option>
-                                        <option value="1986">1986</option>
-                                        <option value="1985">1985</option>
-                                        <option value="1984">1984</option>
-                                        <option value="1983">1983</option>
-                                        <option value="1982">1982</option>
-                                        <option value="1981">1981</option>
-                                        <option value="1980">1980</option>
-                                        <option value="1979">1979</option>
-                                        <option value="1978">1978</option>
-                                        <option value="1977">1977</option>
-                                        <option value="1976">1976</option>
-                                        <option value="1975">1975</option>
-                                        <option value="1974">1974</option>
-                                        <option value="1973">1973</option>
-                                        <option value="1972">1972</option>
-                                        <option value="1971">1971</option>
-                                        <option value="1970">1970</option>
-                                        <option value="1969">1969</option>
-                                        <option value="1968">1968</option>
-                                        <option value="1967">1967</option>
-                                        <option value="1966">1966</option>
-                                        <option value="1965">1965</option>
-                                        <option value="1964">1964</option>
-                                        <option value="1963">1963</option>
-                                        <option value="1962">1962</option>
-                                        <option value="1961">1961</option>
-                                        <option value="1960">1960</option>
-                                        <option value="1959">1959</option>
-                                        <option value="1958">1958</option>
-                                        <option value="1957">1957</option>
-                                        <option value="1956">1956</option>
-                                        <option value="1955">1955</option>
-                                        <option value="1954">1954</option>
-                                        <option value="1953">1953</option>
-                                        <option value="1952">1952</option>
-                                        <option value="1951">1951</option>
-                                        <option value="1950">1950</option>
-                                        <option value="1949">1949</option>
-                                        <option value="1948">1948</option>
-                                        <option value="1947">1947</option>
-                                        <option value="1946">1946</option>
-                                        <option value="1945">1945</option>
-                                        <option value="1944">1944</option>
-                                        <option value="1943">1943</option>
-                                        <option value="1942">1942</option>
-                                        <option value="1941">1941</option>
-                                        <option value="1940">1940</option>
-                                        <option value="1939">1939</option>
-                                        <option value="1938">1938</option>
-                                        <option value="1937">1937</option>
-                                        <option value="1936">1936</option>
-                                        <option value="1935">1935</option>
-                                        <option value="1934">1934</option>
-                                        <option value="1933">1933</option>
-                                        <option value="1932">1932</option>
-                                        <option value="1931">1931</option>
-                                        <option value="1930">1930</option>
-                                        <option value="1929">1929</option>
-                                        <option value="1928">1928</option>
-                                        <option value="1927">1927</option>
-                                        <option value="1926">1926</option>
-                                        <option value="1925">1925</option>
-                                        <option value="1924">1924</option>
-                                        <option value="1923">1923</option>
-                                        <option value="1922">1922</option>
-                                        <option value="1921">1921</option>
-                                        <option value="1920">1920</option>
-                                        <option value="1919">1919</option>
-                                        <option value="1918">1918</option>
-                                        <option value="1917">1917</option>
-                                        <option value="1916">1916</option>
-                                        <option value="1915">1915</option>
-                                        <option value="1914">1914</option>
-                                        <option value="1913">1913</option>
-                                        <option value="1912">1912</option>
-                                        <option value="1911">1911</option>
-                                        <option value="1910">1910</option>
-                                        <option value="1909">1909</option>
-                                        <option value="1908">1908</option>
-                                        <option value="1907">1907</option>
-                                        <option value="1906">1906</option>
-                                        <option value="1905">1905</option>
-                                        <option value="1904">1904</option>
-                                        <option value="1903">1903</option>
-                                        <option value="1902">1902</option>
-                                        <option value="1901">1901</option>
-                                        <option value="1900">1900</option>
-                                    </select>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="modelo" class="form-label">Modelo *</label>
-                                <input type="text" id="modelo" name="modelo" class="form-input" placeholder="Ex: Civic, Corolla, Onix" required>
-                            </div>
-                            
-                            <!-- Preferências de contato -->
-                            <div class="form-group">
-                                <label for="preferenciaContato" class="form-label">Forma de Contato Preferida *</label>
-                                <select id="preferenciaContato" name="preferenciaContato" class="form-select" required>
-                                    <option value="">Selecione</option>
-                                    <option value="whatsapp">WhatsApp</option>
-                                    <option value="telefone">Telefone</option>
-                                    <option value="email">E-mail</option>
-                                    <option value="visita">Visita Presencial</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="melhorHorario" class="form-label">Melhor Horário para Contato *</label>
-                                <select id="melhorHorario" name="melhorHorario" class="form-select" required>
-                                    <option value="">Selecione</option>
-                                    <option value="manha">Manhã (8h-12h)</option>
-                                    <option value="tarde">Tarde (13h-17h)</option>
-                                    <option value="noite">Noite (18h-21h)</option>
-                                    <option value="flexivel">Horário Flexível</option>
-                                </select>
-                            </div>
-                            
-                            <!-- Mensagem adicional -->
-                            <div class="form-group">
-                                <label for="mensagem" class="form-label">Mensagem Adicional (Opcional)</label>
-                                <textarea id="mensagem" name="mensagem" class="form-textarea" placeholder="Conte-nos mais sobre suas necessidades específicas..."></textarea>
-                            </div>
-                            
-                            <!-- Termos e condições -->
-                            <div class="form-group">
-                                <label class="flex items-start gap-3">
-                                    <input type="checkbox" name="aceiteTermos" class="mt-1" required>
-                                    <span class="text-sm text-muted">
-                                        Li e aceito os <a href="#" class="text-orange hover:underline">termos e condições</a> e 
-                                        <a href="#" class="text-orange hover:underline">política de privacidade</a> da AutoProtecta.
-                                    </span>
-                                </label>
-                            </div>
-                            
-                            <!-- Botão de envio -->
-                            <button type="submit" class="btn btn-primary btn-lg w-full">
-                                <i class="fas fa-paper-plane mr-2"></i>
-                                Solicitar Cotação Gratuita
-                            </button>
-                        </form>
+                    <div class="stat-number-container">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-suffix">+</div>
                     </div>
+                    <div class="stat-label">Anos de Experiência</div>
+                    <div class="stat-description">Mercado de proteção veicular</div>
+                </div>
+                
+                <!-- Estatística 3: Avaliação Média -->
+                <div class="stat-card rating-stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-number-container">
+                        <div class="stat-number" data-target="4.9">0</div>
+                        <div class="stat-suffix"></div>
+                    </div>
+                    <div class="stat-label">Avaliação Média</div>
+                    <div class="stat-description">Satisfação dos nossos clientes</div>
+                </div>
+                
+                <!-- Estatística 4: Suporte Disponível -->
+                <div class="stat-card support-stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="stat-number-container">
+                        <div class="stat-number" data-target="24">0</div>
+                        <div class="stat-suffix">/7</div>
+                    </div>
+                    <div class="stat-label">Suporte Disponível</div>
+                    <div class="stat-description">Atendimento ininterrupto</div>
+                </div>
+            </div>
+            
+            <!-- Linha decorativa com grafismo -->
+            <div class="stats-divider">
+                <div class="divider-line"></div>
+                <div class="divider-rhino-small"></div>
+                <div class="divider-line"></div>
+            </div>
+            
+            <!-- Destaque adicional -->
+            <div class="stats-highlight">
+                <div class="highlight-content">
+                    <i class="fas fa-shield-check"></i>
+                    <span>Proteção garantida com a confiança de milhares de clientes</span>
                 </div>
             </div>
         </div>
@@ -542,89 +347,538 @@
 
     <!-- ===== SEÇÃO DE DEPOIMENTOS - FUNDO PLATINUM ===== -->
     <section class="section-platinum" id="depoimentos">
+        <!-- Grafismo decorativo do rinoceronte -->
+        <div class="rhino-graphic-testimonials">
+            <div class="rhino-pattern-testimonials"></div>
+        </div>
+        
         <div class="container">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl mb-6">
                     O que nossos <span class="text-orange">clientes</span> dizem
                 </h2>
-                <p class="text-xl text-muted">
-                    Milhares de motoristas já confiaram na AutoProtecta para proteger seus veículos
+                <p class="text-xl text-muted max-w-3xl mx-auto">
+                    Milhares de clientes já experimentaram a segurança e tranquilidade que só a AutoProtecta oferece.
                 </p>
             </div>
             
-            <!-- Grid de depoimentos -->
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Depoimento 1 -->
-                <div class="card hover-lift">
-                    <div class="card-body text-center">
-                        <div class="text-orange text-4xl mb-4">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p class="text-muted mb-6">
-                            "A AutoProtecta salvou meu carro quando tive um acidente. 
-                            O atendimento foi impecável e a cobertura realmente funcionou como prometido."
-                        </p>
-                        <div class="flex items-center justify-center gap-3">
-                            <div class="w-12 h-12 bg-orange rounded-full flex items-center justify-center">
-                                <span class="text-white font-bold">M</span>
-                            </div>
-                            <div class="text-left">
-                                <div class="font-bold">Marcos Silva</div>
-                                <div class="text-sm text-muted">Cliente desde 2020</div>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Grid de depoimentos melhorado -->
+            <div class="testimonials-grid">
+        <!-- Depoimento 1 -->
+        <div class="testimonial-card testimonial-1">
+            <div class="testimonial-content">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
                 </div>
-                
-                <!-- Depoimento 2 -->
-                <div class="card hover-lift">
-                    <div class="card-body text-center">
-                        <div class="text-orange text-4xl mb-4">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p class="text-muted mb-6">
-                            "Excelente custo-benefício e suporte 24h que realmente funciona. 
-                            Recomendo para todos que querem proteção de qualidade."
-                        </p>
-                        <div class="flex items-center justify-center gap-3">
-                            <div class="w-12 h-12 bg-orange rounded-full flex items-center justify-center">
-                                <span class="text-white font-bold">A</span>
-                            </div>
-                            <div class="text-left">
-                                <div class="font-bold">Ana Costa</div>
-                                <div class="text-sm text-muted">Cliente desde 2019</div>
-                            </div>
-                        </div>
+                <blockquote class="testimonial-text">
+                    "A AutoProtecta salvou meu carro quando tive um acidente. 
+                    O atendimento foi impecável e a cobertura realmente funcionou como prometido."
+                </blockquote>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <span>M</span>
                     </div>
-                </div>
-                
-                <!-- Depoimento 3 -->
-                <div class="card hover-lift">
-                    <div class="card-body text-center">
-                        <div class="text-orange text-4xl mb-4">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p class="text-muted mb-6">
-                            "Processo simples e rápido. Em menos de 2 horas tinha minha cotação 
-                            e em 24h estava protegido. Profissionais muito competentes."
-                        </p>
-                        <div class="flex items-center justify-center gap-3">
-                            <div class="w-12 h-12 bg-orange rounded-full flex items-center justify-center">
-                                <span class="text-white font-bold">C</span>
-                            </div>
-                            <div class="text-left">
-                                <div class="font-bold">Carlos Santos</div>
-                                <div class="text-sm text-muted">Cliente desde 2021</div>
-                            </div>
+                    <div class="author-info">
+                        <div class="author-name">Marcos Silva</div>
+                        <div class="author-details">Cliente desde 2020</div>
+                        <div class="author-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <!-- Depoimento 2 -->
+        <div class="testimonial-card testimonial-2">
+            <div class="testimonial-content">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <blockquote class="testimonial-text">
+                    "Excelente custo-benefício e suporte 24h que realmente funciona. 
+                    Recomendo para todos que querem proteção de qualidade."
+                </blockquote>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <span>A</span>
+                    </div>
+                    <div class="author-info">
+                        <div class="author-name">Ana Costa</div>
+                        <div class="author-details">Cliente desde 2019</div>
+                        <div class="author-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Depoimento 3 -->
+        <div class="testimonial-card testimonial-3">
+            <div class="testimonial-content">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <blockquote class="testimonial-text">
+                    "Processo simples e rápido. Em menos de 2 horas tinha minha cotação 
+                    e em 24h estava protegido. Profissionais muito competentes."
+                </blockquote>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <span>C</span>
+                    </div>
+                    <div class="author-info">
+                        <div class="author-name">Carlos Santos</div>
+                        <div class="author-details">Cliente desde 2021</div>
+                        <div class="author-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </div>
     </section>
+
+    <!-- ===== SEÇÃO DE COTAÇÃO PERSONALIZADA - DESIGN MODERNO ===== -->
+    <section class="cotacao-moderna" id="cotacao">
+        <div class="cotacao-container">
+            <!-- Lado Esquerdo - Informações (Fundo Escuro) -->
+            <div class="cotacao-left">
+                <h1 class="cotacao-title">Proteja seu veículo hoje</h1>
+                <p class="cotacao-subtitle">Nossa equipe especializada analisará seu perfil e criará um plano de proteção sob medida para suas necessidades específicas.</p>
+                
+                <h2 class="beneficios-title">Por que escolher nossa cotação?</h2>
+                
+                <div class="beneficios-grid">
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="beneficio-content">
+                            <h3>Cotação gratuita</h3>
+                            <p>Sem compromisso e totalmente personalizada para seu perfil</p>
+                        </div>
+                    </div>
+                    
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="beneficio-content">
+                            <h3>Resposta rápida</h3>
+                            <p>Em até 2 horas úteis você recebe sua proposta personalizada</p>
+                        </div>
+                    </div>
+                    
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="beneficio-content">
+                            <h3>Suporte especializado</h3>
+                            <p>Equipe dedicada durante todo o processo de cotação</p>
+                        </div>
+                    </div>
+                    
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="beneficio-content">
+                            <h3>Planos personalizados</h3>
+                            <p>Cobertura adaptada ao seu perfil e veículo específico</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="seguranca-section">
+                    <div class="seguranca-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="seguranca-content">
+                        <h3>100% Seguro - Proteção total de dados</h3>
+                        <p>Seus dados estão protegidos com a mais alta tecnologia de segurança. Sua privacidade é nossa prioridade absoluta.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Lado Direito - Formulário (Fundo Claro) -->
+            <div class="cotacao-right">
+                <div class="form-container-modern">
+                    <h2 class="form-title-modern">Solicitar Cotação</h2>
+                    <p class="form-subtitle-modern">Preencha os dados para receber sua proposta personalizada</p>
+                    
+                    <div class="step-indicator-container">
+                    </div>
+                    
+                    <form id="cotacaoForm" class="multi-step-form">
+                        <!-- Etapa 1: Dados Pessoais -->
+                        <div class="form-step active" data-step="1">
+                            <div class="mb-6">
+                                <h4 class="text-xl font-semibold text-primary mb-2 flex items-center gap-2">
+                                    <span class="w-8 h-8 bg-orange text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
+                                    Dados Pessoais
+                                </h4>
+                                <p class="text-muted text-sm">Informações básicas para contato</p>
+                            </div>
+                            
+                            <div class="space-y-5">
+                                <div class="form-group-modern">
+                                    <label for="nome" class="form-label-modern">Nome Completo *</label>
+                                    <div class="relative">
+                                        <i class="fas fa-user absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 form-icon"></i>
+                                        <input type="text" id="nome" name="nome" class="form-input-modern pl-12" placeholder="Digite seu nome completo" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group-modern">
+                                    <label for="email" class="form-label-modern">E-mail *</label>
+                                    <div class="relative">
+                                        <i class="fas fa-envelope absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                                        <input type="email" id="email" name="email" class="form-input-modern pl-12" placeholder="seu@email.com" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group-modern">
+                                    <label for="telefone" class="form-label-modern">Telefone/WhatsApp *</label>
+                                    <div class="relative">
+                                        <i class="fas fa-phone absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                                        <input type="tel" id="telefone" name="telefone" class="form-input-modern pl-12" placeholder="(11) 99999-9999" required>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="mt-8">
+                                <button type="button" class="btn-modern-primary w-full" onclick="nextCotacaoStep()">
+                                    <span>Continuar para Próxima Etapa</span>
+                                    <i class="fas fa-arrow-right ml-2"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Etapa 2: Dados do Veículo -->
+                        <div class="form-step" data-step="2">
+                            <div class="mb-6">
+                                <h4 class="text-xl font-semibold text-primary mb-2 flex items-center gap-2">
+                                    <span class="w-8 h-8 bg-orange text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
+                                    Dados do Veículo
+                                </h4>
+                                <p class="text-muted text-sm">Informações sobre seu veículo</p>
+                            </div>
+                            
+                            <div class="space-y-5">
+                                <div class="form-group-modern">
+                                    <label for="tipoVeiculo" class="form-label-modern">Tipo de Veículo *</label>
+                                    <div class="relative">
+                                        <i class="fas fa-car absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                                        <select id="tipoVeiculo" name="tipoVeiculo" class="form-select-modern pl-12" required>
+                                            <option value="">Selecione o tipo</option>
+                                            <option value="carro">Carro</option>
+                                            <option value="moto">Moto</option>
+                                            <option value="caminhao">Caminhão</option>
+                                            <option value="van">Van/Utilitário</option>
+                                            <option value="outros">Outros</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="grid md:grid-cols-2 gap-5">
+                                    <div class="form-group-modern">
+                                        <label for="marca" class="form-label-modern">Marca *</label>
+                                        <div class="relative">
+                                            <i class="fas fa-tag absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                                            <select id="marca" name="marca" class="form-select-modern pl-12" required>
+                                                <option value="">Selecione</option>
+                                                <option value="chevrolet">Chevrolet</option>
+                                                <option value="ford">Ford</option>
+                                                <option value="volkswagen">Volkswagen</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="honda">Honda</option>
+                                                <option value="toyota">Toyota</option>
+                                                <option value="hyundai">Hyundai</option>
+                                                <option value="outros">Outros</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group-modern">
+                                        <label for="ano" class="form-label-modern">Ano *</label>
+                                        <div class="relative">
+                                            <i class="fas fa-calendar absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                                            <select id="ano" name="ano" class="form-select-modern pl-12" required>
+                                                <option value="">Selecione</option>
+                                                <option value="2024">2024</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2017">2017</option>
+                                                <option value="2016">2016</option>
+                                                <option value="2015">2015</option>
+                                                <option value="2014">2014</option>
+                                                <option value="2013">2013</option>
+                                                <option value="2012">2012</option>
+                                                <option value="2011">2011</option>
+                                                <option value="2010">2010</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group-modern">
+                                    <label for="modelo" class="form-label-modern">Modelo *</label>
+                                    <div class="relative">
+                                        <i class="fas fa-car-side absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                                        <input type="text" id="modelo" name="modelo" class="form-input-modern pl-12" placeholder="Ex: Civic, Corolla, Onix" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex gap-4 mt-8">
+                                    <button type="button" class="btn-modern-secondary flex-1" onclick="prevCotacaoStep()">
+                                        <i class="fas fa-arrow-left mr-2"></i>
+                                        <span>Anterior</span>
+                                    </button>
+                                    <button type="button" class="btn-modern-primary flex-1" onclick="nextCotacaoStep()">
+                                        <span>Próximo</span>
+                                        <i class="fas fa-arrow-right ml-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Etapa 3: Preferências e Finalização -->
+                        <div class="form-step" data-step="3">
+                                <div class="mb-6">
+                                    <h4 class="text-xl font-semibold text-primary mb-2 flex items-center gap-2">
+                                        <span class="w-8 h-8 bg-orange text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
+                                        Preferências e Finalização
+                                    </h4>
+                                    <p class="text-muted text-sm">Últimos detalhes para sua cotação</p>
+                                </div>
+                                
+                                <div class="space-y-5">
+                                    <div class="form-group-modern">
+                                        <label for="preferenciaContato" class="form-label-modern">Forma de Contato Preferida *</label>
+                                        <div class="relative">
+                                            <i class="fas fa-comments absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                                            <select id="preferenciaContato" name="preferenciaContato" class="form-select-modern pl-12" required>
+                                                <option value="">Selecione</option>
+                                                <option value="whatsapp">WhatsApp</option>
+                                                <option value="telefone">Telefone</option>
+                                                <option value="email">E-mail</option>
+                                                <option value="visita">Visita Presencial</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group-modern">
+                                        <label for="melhorHorario" class="form-label-modern">Melhor Horário para Contato *</label>
+                                        <div class="relative">
+                                            <i class="fas fa-clock absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                                            <select id="melhorHorario" name="melhorHorario" class="form-select-modern pl-12" required>
+                                                <option value="">Selecione</option>
+                                                <option value="manha">Manhã (8h-12h)</option>
+                                                <option value="tarde">Tarde (13h-17h)</option>
+                                                <option value="noite">Noite (18h-21h)</option>
+                                                <option value="flexivel">Horário Flexível</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group-modern">
+                                        <label for="mensagem" class="form-label-modern">Mensagem Adicional (Opcional)</label>
+                                        <div class="relative">
+                                            <i class="fas fa-edit absolute left-4 top-3 text-gray-400"></i>
+                                            <textarea id="mensagem" name="mensagem" class="form-textarea-modern pl-12 pt-3" placeholder="Conte-nos mais sobre suas necessidades específicas..." rows="4"></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group-modern">
+                                        <label class="flex items-start gap-4 p-4 bg-gray-50 rounded-xl border border-gray-200 hover:border-orange transition-colors cursor-pointer">
+                                            <input type="checkbox" name="aceiteTermos" class="mt-1 w-5 h-5 text-orange border-gray-300 rounded focus:ring-orange" required>
+                                            <span class="text-sm text-muted leading-relaxed">
+                                                Li e aceito os <a href="#" class="text-orange hover:underline font-medium">termos e condições</a> e 
+                                                <a href="#" class="text-orange hover:underline font-medium">política de privacidade</a> da AutoProtecta.
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex gap-4 mt-8">
+                                    <button type="button" class="btn-modern-secondary flex-1" onclick="prevCotacaoStep()">
+                                        <i class="fas fa-arrow-left mr-2"></i>
+                                        <span>Anterior</span>
+                                    </button>
+                                    <button type="button" class="btn-modern-primary flex-1" onclick="nextCotacaoStep()">
+                                        <span>Próximo</span>
+                                        <i class="fas fa-arrow-right ml-2"></i>
+                                    </button>
+                                </div>
+                        </div>
+
+                        <!-- Etapa 4: Confirmação Final -->
+                        <div class="form-step confirmacao-step" data-step="4">
+                                <div class="mb-6">
+                                    <h4 class="text-xl font-semibold text-primary mb-2 flex items-center gap-2">
+                                        <span class="w-8 h-8 bg-orange text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
+                                        Confirmação Final
+                                    </h4>
+                                    <p class="text-muted text-sm">Revise seus dados antes de enviar</p>
+                                </div>
+                                
+                                <div class="space-y-6">
+                                    <!-- Resumo dos dados -->
+                                    <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200 resumo-card">
+                                        <h5 class="font-semibold text-primary mb-4 flex items-center gap-2 resumo-header">
+                                            <i class="fas fa-user text-orange"></i>
+                                            Dados Pessoais
+                                        </h5>
+                                        <div class="grid md:grid-cols-2 gap-4">
+                                            <div>
+                                                <span class="text-sm text-muted">Nome:</span>
+                                                <p class="font-medium" id="resumoNome">-</p>
+                                            </div>
+                                            <div>
+                                                <span class="text-sm text-muted">E-mail:</span>
+                                                <p class="font-medium" id="resumoEmail">-</p>
+                                            </div>
+                                            <div>
+                                                <span class="text-sm text-muted">Telefone:</span>
+                                                <p class="font-medium" id="resumoTelefone">-</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200 resumo-card">
+                                        <h5 class="font-semibold text-primary mb-4 flex items-center gap-2 resumo-header">
+                                            <i class="fas fa-car text-orange"></i>
+                                            Dados do Veículo
+                                        </h5>
+                                        <div class="grid md:grid-cols-2 gap-4">
+                                            <div>
+                                                <span class="text-sm text-muted">Tipo:</span>
+                                                <p class="font-medium" id="resumoTipo">-</p>
+                                            </div>
+                                            <div>
+                                                <span class="text-sm text-muted">Marca:</span>
+                                                <p class="font-medium" id="resumoMarca">-</p>
+                                            </div>
+                                            <div>
+                                                <span class="text-sm text-muted">Ano:</span>
+                                                <p class="font-medium" id="resumoAno">-</p>
+                                            </div>
+                                            <div>
+                                                <span class="text-sm text-muted">Modelo:</span>
+                                                <p class="font-medium" id="resumoModelo">-</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200 resumo-card">
+                                        <h5 class="font-semibold text-primary mb-4 flex items-center gap-2 resumo-header">
+                                            <i class="fas fa-cog text-orange"></i>
+                                            Preferências
+                                        </h5>
+                                        <div class="grid md:grid-cols-2 gap-4">
+                                            <div>
+                                                <span class="text-sm text-muted">Contato:</span>
+                                                <p class="font-medium" id="resumoContato">-</p>
+                                            </div>
+                                            <div>
+                                                <span class="text-sm text-muted">Horário:</span>
+                                                <p class="font-medium" id="resumoHorario">-</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Mensagem adicional se houver -->
+                                    <div id="resumoMensagemContainer" class="bg-gray-50 rounded-2xl p-6 border border-gray-200 hidden resumo-card">
+                                        <h5 class="font-semibold text-primary mb-4 flex items-center gap-2 resumo-header">
+                                            <i class="fas fa-edit text-orange"></i>
+                                            Mensagem Adicional
+                                        </h5>
+                                        <p class="font-medium" id="resumoMensagem">-</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex gap-4 mt-8">
+                                    <button type="button" class="btn-modern-secondary flex-1" onclick="prevCotacaoStep()">
+                                        <i class="fas fa-arrow-left mr-2"></i>
+                                        <span>Anterior</span>
+                                    </button>
+                                    <button type="submit" class="btn-modern-success flex-1">
+                                        <i class="fas fa-paper-plane mr-2"></i>
+                                        <span>Confirmar e Enviar Cotação</span>
+                                    </button>
+                                </div>
+                        </div>
+                    </form>
+
+                    <!-- Barra de Progresso Modernizada -->
+                    <div class="mt-8">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-sm font-medium text-primary">Progresso da cotação</span>
+                                <span class="text-sm text-muted">Etapa <span id="currentStep">1</span> de 4</span>
+                            </div>
+                            
+                            <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                                <div class="progress-fill-modern h-full bg-gradient-to-r from-orange to-orange-dark rounded-full transition-all duration-500 ease-out" id="progressFill" style="width: 25%"></div>
+                            </div>
+                            
+                            <div class="flex justify-between mt-4">
+                                <div class="step-indicator-modern active" data-step="1">
+                                    <div class="w-8 h-8 bg-orange text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
+                                    <span class="text-xs text-primary mt-1">Dados</span>
+                                </div>
+                                <div class="step-indicator-modern" data-step="2">
+                                    <div class="w-8 h-8 bg-gray-300 text-gray-600 rounded-full flex items-center justify-center text-sm font-bold">2</div>
+                                    <span class="text-xs text-muted mt-1">Veículo</span>
+                                </div>
+                                <div class="step-indicator-modern" data-step="3">
+                                    <div class="w-8 h-8 bg-gray-300 text-gray-600 rounded-full flex items-center justify-center text-sm font-bold">3</div>
+                                    <span class="text-xs text-muted mt-1">Preferências</span>
+                                </div>
+                                <div class="step-indicator-modern" data-step="4">
+                                    <div class="w-8 h-8 bg-gray-300 text-gray-600 rounded-full flex items-center justify-center text-sm font-bold">4</div>
+                                    <span class="text-xs text-muted mt-1">Confirmar</span>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+                                
+
+
+
 
     <!-- ===== SEÇÃO CTA FINAL - FUNDO PRETO ===== -->
     <section class="section-dark" id="cta-final">
+        <!-- Grafismo decorativo do rinoceronte -->
+        <div class="rhino-graphic-cta">
+            <div class="rhino-pattern-cta"></div>
+        </div>
+        
         <div class="container text-center">
             <h2 class="text-4xl md:text-5xl mb-6">
                 Não espere o <span class="text-orange">inesperado</span> acontecer
@@ -634,104 +888,141 @@
                 Nossa equipe está pronta para criar um plano personalizado para você.
             </p>
             
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#cotacao" class="btn btn-primary btn-xl">
-                    <i class="fas fa-shield-alt mr-2"></i>
+            <!-- CTA Principal com Destaque de Urgência Integrado -->
+            <div class="cta-main-container">
+                <a href="#cotacao" class="btn btn-primary btn-xl cta-primary">
+                    <i class="fas fa-shield-alt mr-3"></i>
                     Solicitar Cotação Agora
                 </a>
-                <a href="#contato" class="btn btn-outline btn-xl">
-                    <i class="fas fa-phone mr-2"></i>
-                    Falar com Especialista
-                </a>
+                
+                <!-- Badge de urgência integrado -->
+                <div class="urgency-badge">
+                    <i class="fas fa-clock"></i>
+                    <span>Resposta em até 2 horas úteis</span>
+                </div>
             </div>
             
-            <!-- Destaque de urgência -->
-            <div class="mt-8 inline-block">
-                <div class="bg-orange rounded-full px-6 py-3 text-white font-bold">
-                    <i class="fas fa-clock mr-2"></i>
-                    Resposta em até 2 horas úteis
-                </div>
+            <!-- CTA Secundário -->
+            <div class="cta-secondary-container">
+                <p class="text-platinum text-sm mb-3">Precisa de ajuda personalizada?</p>
+                <a href="#contato" class="btn btn-outline btn-lg cta-secondary">
+                    <i class="fas fa-headset mr-2"></i>
+                    Falar com Especialista
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- ===== FOOTER - FUNDO PRETO ===== -->
-    <footer class="bg-smoky-black text-white py-16" id="contato">
+
+    <!-- ===== FOOTER PERSONALIZADO AUTOPROTECTA ===== -->
+    <footer class="footer-autoprotecta" id="contato">
         <div class="container">
-            <div class="grid md:grid-cols-4 gap-8">
-                <!-- Logo e descrição -->
-                <div class="md:col-span-2">
-                    <div class="flex items-center gap-3 mb-4">
-                        <img src="images/logo-autoprotecta-horizontal-preto.png" alt="AutoProtecta" class="h-12">
-                        <span class="text-xl font-bold">AutoProtecta</span>
+            <!-- Conteúdo Principal do Footer -->
+            <div class="footer-content">
+                <!-- Seção Logo e Descrição -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/logo-autoprotecta-horizontal-preto.png" alt="AutoProtecta" class="logo-img">
+                        
                     </div>
-                    <p class="text-platinum mb-6 max-w-md">
-                        Líder em proteção veicular com mais de 15 anos de experiência. 
-                        Oferecemos soluções personalizadas que realmente protegem o que é mais importante para você.
+                    <p class="brand-description">
+                        Especialistas em proteção veicular com mais de 15 anos de experiência. 
+                        Sua segurança é nossa prioridade, oferecendo proteção robusta e confiável.
                     </p>
-                    
-                    <!-- Redes sociais -->
-                    <div class="flex gap-4">
-                        <a href="#" class="bg-orange w-10 h-10 rounded-full flex items-center justify-center hover:bg-orange-dark transition-colors">
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="text-orange w-10 h-10 rounded-full flex items-center justify-center hover:bg-orange-dark transition-colors">
+                        <a href="#" class="social-link" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="bg-orange w-10 h-10 rounded-full flex items-center justify-center hover:bg-orange-dark transition-colors">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="#" class="bg-orange w-10 h-10 rounded-full flex items-center justify-center hover:bg-orange-dark transition-colors">
+                        <a href="#" class="social-link" aria-label="WhatsApp">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </div>
                 </div>
                 
-                <!-- Links rápidos -->
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Links Rápidos</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#sobre" class="text-platinum hover:text-orange transition-colors">Sobre Nós</a></li>
-                        <li><a href="#beneficios" class="text-platinum hover:text-orange transition-colors">Benefícios</a></li>
-                        <li><a href="#cotacao" class="text-platinum hover:text-orange transition-colors">Cotação</a></li>
-                        <li><a href="#depoimentos" class="text-platinum hover:text-orange transition-colors">Depoimentos</a></li>
+                <!-- Seção Links Úteis -->
+                <div class="footer-section">
+                    <h4 class="section-title">Links Úteis</h4>
+                    <ul class="footer-links">
+                        <li><a href="#sobre" class="footer-link">Sobre Nós</a></li>
+                        <li><a href="#beneficios" class="footer-link">Benefícios</a></li>
+                        <li><a href="#cotacao" class="footer-link">Solicitar Cotação</a></li>
+                        <li><a href="#" class="footer-link">Política de Privacidade</a></li>
+                        <li><a href="#" class="footer-link">Termos de Uso</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
                     </ul>
                 </div>
                 
-                <!-- Contato -->
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Contato</h4>
-                    <div class="space-y-3">
-                        <div class="flex items-center gap-3">
-                            <i class="fas fa-phone text-orange"></i>
-                            <span class="text-platinum">(11) 3000-5000</span>
+                <!-- Seção Serviços -->
+                <div class="footer-section">
+                    <h4 class="section-title">Nossos Serviços</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Proteção Veicular</a></li>
+                        <li><a href="#" class="footer-link">Seguro Automóvel</a></li>
+                        <li><a href="#" class="footer-link">Assistência 24h</a></li>
+                        <li><a href="#" class="footer-link">Cobertura Completa</a></li>
+                        <li><a href="#" class="footer-link">Suporte Premium</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Seção Contato -->
+                <div class="footer-section">
+                    <h4 class="section-title">Contato</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <div class="contact-details">
+                                <span class="contact-label">Telefone</span>
+                                <span class="contact-value">(11) 3000-5000</span>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-3">
-                            <i class="fas fa-envelope text-orange"></i>
-                            <span class="text-platinum">contato@autoprotecta.com.br</span>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <div class="contact-details">
+                                <span class="contact-label">E-mail</span>
+                                <span class="contact-value">contato@autoprotecta.com.br</span>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-3">
-                            <i class="fas fa-map-marker-alt text-orange"></i>
-                            <span class="text-platinum">São Paulo, SP</span>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <div class="contact-details">
+                                <span class="contact-label">Endereço</span>
+                                <span class="contact-value">São Paulo, SP - Brasil</span>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-3">
-                            <i class="fas fa-clock text-orange"></i>
-                            <span class="text-platinum">24/7</span>
+                        <div class="contact-item">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <div class="contact-details">
+                                <span class="contact-label">Atendimento</span>
+                                <span class="contact-value">24h / 7 dias</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <!-- Linha divisória -->
-            <div class="border-t border-platinum-dark mt-12 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-platinum text-sm">
-                        &copy; 2024 AutoProtecta. Todos os direitos reservados.
+            <!-- Linha Divisória com Grafismo -->
+            <div class="footer-divider">
+                <div class="divider-line"></div>
+                <div class="divider-rhino"></div>
+                <div class="divider-line"></div>
+            </div>
+            
+            <!-- Rodapé Inferior -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">
+                        © 2024 AutoProtecta. Todos os direitos reservados.
                     </p>
-                    <div class="flex gap-6 mt-4 md:mt-0">
-                        <a href="#" class="text-platinum hover:text-orange text-sm transition-colors">Termos de Uso</a>
-                        <a href="#" class="text-platinum hover:text-orange text-sm transition-colors">Política de Privacidade</a>
-                        <a href="#" class="text-platinum hover:text-orange text-sm transition-colors">Cookies</a>
+                    <div class="footer-bottom-links">
+                        <a href="#" class="bottom-link">Política de Privacidade</a>
+                        <a href="#" class="footer-link">Termos de Uso</a>
+                        <a href="#" class="footer-link">Cookies</a>
                     </div>
                 </div>
             </div>
@@ -771,7 +1062,7 @@
             const submitBtn = this.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerHTML;
             
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Enviando...';
+            submitBtn.innerHTML = '<i class="fas fa-spinner mr-2"></i>Enviando...';
             submitBtn.disabled = true;
             
             // Simular delay de envio
@@ -808,6 +1099,39 @@
         document.querySelectorAll('.card, .grid > div').forEach(el => {
             observer.observe(el);
         });
+        
+        // Animação das estatísticas
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateStats();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        const statsSection = document.getElementById('estatisticas');
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
+        
+        function animateStats() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            statNumbers.forEach(stat => {
+                const target = parseFloat(stat.getAttribute('data-target'));
+                const suffix = stat.nextElementSibling.textContent;
+                let current = 0;
+                const increment = target / 50;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    stat.textContent = current.toFixed(suffix === '' ? 1 : 0);
+                }, 30);
+            });
+        }
 
         // Validação de formulário em tempo real
         const inputs = document.querySelectorAll('.form-input, .form-select, .form-textarea');
@@ -826,6 +1150,22 @@
                 }
             });
         });
+    </script>
+
+    <!-- JavaScript do formulário em etapas -->
+    <script src="js/script.js"></script>
+    
+    <!-- Script de inicialização final -->
+    <script>
+        // Garantir que o formulário seja inicializado corretamente
+        setTimeout(() => {
+            if (typeof window.nextCotacaoStep === 'function') {
+                console.log('✅ Formulário de cotação inicializado com sucesso!');
+                console.log('Etapas disponíveis:', document.querySelectorAll('#cotacaoForm .form-step').length);
+            } else {
+                console.error('❌ Erro na inicialização do formulário');
+            }
+        }, 500);
     </script>
 </body>
 </html>
